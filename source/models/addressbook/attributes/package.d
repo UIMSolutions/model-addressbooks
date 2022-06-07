@@ -1,1 +1,1 @@
-module models.addressbook.attributes;
+module models.addressbooks.attributes;
