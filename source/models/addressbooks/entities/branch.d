@@ -11,12 +11,12 @@ class DBranchEntity : DOOPEntity {
 
     this
       .addValues([ // individual values
-        "VendorAccount": StringAttribute, //
-        "AlcoholRegulationAuthority": StringAttribute, //
-        "SeparateDivisionID": StringAttribute, //
-        "Independent": StringAttribute, //
-        "BackingTable_Branches_RURelationshipId": StringAttribute, //
-        "Relationship_PrimaryCompanyContextRelationshipId": StringAttribute, //
+        "vendorAccount": StringAttribute, //
+        "alcoholRegulationAuthority": StringAttribute, //
+        "separateDivisionId": UUIDAttribute, //
+        "independent": StringAttribute, //
+        "backingTable_Branches_RURelationshipId": UUIDAttribute, //
+        "relationship_PrimaryCompanyContextRelationshipId": UUIDAttribute, //
       ])
       .registerPath("addressbooks_branches");
   }

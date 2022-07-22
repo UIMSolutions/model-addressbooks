@@ -11,12 +11,11 @@ class DCompanyInfoEntity : DOOPEntity {
 
     this
       .addValues([ // individual values
-        "KnownAs": StringAttribute, 
-        "LanguageId": StringAttribute, 
-        "Name": StringAttribute, 
-        "PartyNumber": StringAttribute, 
-        "DataArea": StringAttribute, 
-        "BackingTable_CompanyInfoRelationshipId": StringAttribute, 
+        "knownAs": StringAttribute, 
+        "languageId": UUIDAttribute, 
+        "partyNumber": StringAttribute, 
+        "dataArea": StringAttribute, 
+        "backingTable_CompanyInfoRelationshipId": UUIDAttribute, 
       ])
       .registerPath("addressbooks_companyinfos");
   }
