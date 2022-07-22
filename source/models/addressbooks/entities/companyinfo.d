@@ -1,7 +1,7 @@
 module models.addressbooks.entities.companyinfo;
 
 @safe:
-import models.applications;
+import models.addressbooks;
 
 class DCompanyInfoEntity : DOOPEntity {
   mixin(EntityThis!("CompanyInfoEntity"));
