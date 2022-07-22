@@ -1,4 +1,4 @@
-module models.addressbooks.entities.logistics.locationrolex;
+module models.addressbooks.entities.logistics.postaladresses.electroniccontact;
 
 @safe:
 import models.addressbooks;
