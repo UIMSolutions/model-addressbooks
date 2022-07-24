@@ -3,8 +3,8 @@ module models.addressbooks.entities.fias.house;
 @safe:
 import models.addressbooks;
 
-class DDirNameAffixEntity : DOOPEntity {
-  mixin(EntityThis!("DirNameAffixEntity"));
+class DFiasHouseEntity : DOOPEntity {
+  mixin(EntityThis!("FiasHouseEntity"));
   
   override void initialize() {
     super.initialize;
@@ -15,15 +15,15 @@ class DDirNameAffixEntity : DOOPEntity {
         "Type":	StringAttribute,
         "BackingTable_DirNameAffixRelationshipId":	StringAttribute,
       ])
-      .registerPath("addressbooks_dir.nameaffixes");
+      .registerPath("addressbooks_fias.houses");
   }
 }
-mixin(EntityCalls!("DirNameAffixEntity"));
+mixin(EntityCalls!("FiasHouseEntity"));
 
 version(test_library) {
   unittest {
-    assert(DirNameAffixEntity);
+    assert(FiasHouseEntity);
   
-    auto entity = DirNameAffixEntity;
+    auto entity = FiasHouseEntity;
   }
 }
