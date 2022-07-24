@@ -11,9 +11,23 @@ class DFiasHouseEntity : DOOPEntity {
 
     this
       .addValues([ // individual values
-        "Affix":	StringAttribute,
-        "Type":	StringAttribute,
-        "BackingTable_DirNameAffixRelationshipId":	StringAttribute,
+houseId		GAB/FiasHouseEntity
+houseGuid		GAB/FiasHouseEntity
+aOGuid		GAB/FiasHouseEntity
+houseNum		GAB/FiasHouseEntity
+buildNum		GAB/FiasHouseEntity
+strucNum		GAB/FiasHouseEntity
+divType		GAB/FiasHouseEntity
+estStatus		GAB/FiasHouseEntity
+strStatus		GAB/FiasHouseEntity
+postalCode		GAB/FiasHouseEntity
+iFNSFL		GAB/FiasHouseEntity
+terrIFNSFL		GAB/FiasHouseEntity
+oKATO		GAB/FiasHouseEntity
+startDate		GAB/FiasHouseEntity
+endDate		GAB/FiasHouseEntity
+backingTable_FiasHouseRelationshipId		GAB/FiasHouseEntity
+relationship_PrimaryCompanyContextRelationshipId		GAB/FiasHouseEntity
       ])
       .registerPath("addressbooks_fias.houses");
   }
