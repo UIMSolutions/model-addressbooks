@@ -3,26 +3,35 @@ module models.addressbooks.entities.dir.parties.relationship;
 @safe:
 import models.addressbooks;
 
-class DDirAddressBooksEntity : DOOPEntity {
-  mixin(EntityThis!("DirAddressBooksEntity"));
+class DDirPartyRelationshipEntity : DOOPEntity {
+  mixin(EntityThis!("DirPartyRelationshipEntity"));
   
   override void initialize() {
     super.initialize;
 
     this
       .addValues([ // individual values
-        "system": StringAttribute, 
-        "backingTable_DirAddressBookRelationshipId": UUIDAttribute, 
+        "legalEntityDataArea": StringAttribute, 
+        "relationshipType": StringAttribute, 
+        "validFrom": StringAttribute, 
+        "validTo": StringAttribute, 
+        "childPartyId": StringAttribute, 
+        "childParty": StringAttribute, 
+        "parentParty": StringAttribute, 
+        "nullableParentPartyId": StringAttribute, 
+        "parentPartyId": StringAttribute, 
+        "systemType": StringAttribute, 
+        "backingTable_DirPartyRelationshipRelationshipId": StringAttribute, 
       ])
-      .registerPath("addressbooks_dir.addressbook");
+      .registerPath("addressbooks_dir.parties.relationships");
   }
 }
-mixin(EntityCalls!("DirAddressBooksEntity"));
+mixin(EntityCalls!("DirPartyRelationshipEntity"));
 
 version(test_library) {
   unittest {
-    assert(DirAddressBooksEntity);
+    assert(DirPartyRelationshipEntity);
   
-    auto entity = DirAddressBooksEntity;
+    auto entity = DirPartyRelationshipEntity;
   }
 }

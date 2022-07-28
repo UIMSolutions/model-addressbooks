@@ -3,26 +3,43 @@ module models.addressbooks.entities.dir.parties.contact;
 @safe:
 import models.addressbooks;
 
-class DDirAddressBooksEntity : DOOPEntity {
-  mixin(EntityThis!("DirAddressBooksEntity"));
+class DDirPartyContactEntity : DOOPEntity {
+  mixin(EntityThis!("DirPartyContactEntity"));
   
   override void initialize() {
     super.initialize;
 
     this
       .addValues([ // individual values
-        "system": StringAttribute, 
-        "backingTable_DirAddressBookRelationshipId": UUIDAttribute, 
+        "PartyNumber": StringAttribute, 
+        "LocationId": StringAttribute, 
+        "Description": StringAttribute, 
+        "Type": StringAttribute, 
+        "CountryRegionCode": StringAttribute, 
+        "Locator": StringAttribute, 
+        "LocatorExtension": StringAttribute, 
+        "Purpose": StringAttribute, 
+        "IsMobilePhone": StringAttribute, 
+        "IsInstantMessage": StringAttribute, 
+        "IsPrimary": StringAttribute, 
+        "IsPrivate": StringAttribute, 
+        "Party": StringAttribute, 
+        "Location": StringAttribute, 
+        "DunsNumberRecId": StringAttribute, 
+        "ParentLocation": StringAttribute, 
+        "LogisticsElectronicAddressRecId": StringAttribute, 
+        "BackingTable_LogisticsLocationRelationshipId": StringAttribute, 
+
       ])
-      .registerPath("addressbooks_dir.addressbook");
+      .registerPath("addressbooks_dir.parties.contacts");
   }
 }
-mixin(EntityCalls!("DirAddressBooksEntity"));
+mixin(EntityCalls!("DirPartyContactEntity"));
 
 version(test_library) {
   unittest {
-    assert(DirAddressBooksEntity);
+    assert(DirPartyContactEntity);
   
-    auto entity = DirAddressBooksEntity;
+    auto entity = DirPartyContactEntity;
   }
 }
