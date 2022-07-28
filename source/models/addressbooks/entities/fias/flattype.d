@@ -3,27 +3,28 @@ module models.addressbooks.entities.fias.flattype;
 @safe:
 import models.addressbooks;
 
-class DDirNameAffixEntity : DOOPEntity {
-  mixin(EntityThis!("DirNameAffixEntity"));
+class DFiasFlatTypeEntity : DOOPEntity {
+  mixin(EntityThis!("FiasFlatTypeEntity"));
   
   override void initialize() {
     super.initialize;
 
     this
       .addValues([ // individual values
-        "Affix":	StringAttribute,
-        "Type":	StringAttribute,
-        "BackingTable_DirNameAffixRelationshipId":	StringAttribute,
+flTypeId		GAB/FiasFlatTypeEntity
+shortName		GAB/FiasFlatTypeEntity
+backingTable_FiasFlatTypeRelationshipId		GAB/FiasFlatTypeEntity
+relationship_PrimaryCompanyContextRelationshipId		GAB/FiasFlatTypeEntity
       ])
-      .registerPath("addressbooks_dir.nameaffixes");
+      .registerPath("addressbooks_fias.flattypes");
   }
 }
-mixin(EntityCalls!("DirNameAffixEntity"));
+mixin(EntityCalls!("FiasFlatTypeEntity"));
 
 version(test_library) {
   unittest {
-    assert(DirNameAffixEntity);
+    assert(FiasFlatTypeEntity);
   
-    auto entity = DirNameAffixEntity;
+    auto entity = FiasFlatTypeEntity;
   }
 }

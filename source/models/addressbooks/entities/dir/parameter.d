@@ -3,27 +3,33 @@ module models.addressbooks.entities.dir.parameter;
 @safe:
 import models.addressbooks;
 
-class DDirNameAffixEntity : DOOPEntity {
-  mixin(EntityThis!("DirNameAffixEntity"));
+class DDirParametersEntity : DOOPEntity {
+  mixin(EntityThis!("DirParametersEntity"));
   
   override void initialize() {
     super.initialize;
 
     this
       .addValues([ // individual values
-        "Affix":	StringAttribute,
-        "Type":	StringAttribute,
-        "BackingTable_DirNameAffixRelationshipId":	StringAttribute,
+Key		GAB/DirParametersEntity
+NameSequence		GAB/DirParametersEntity
+DeletePartiesWithNoRole		GAB/DirParametersEntity
+UseDuplicateCheck		GAB/DirParametersEntity
+DunsDisplayOnAddress		GAB/DirParametersEntity
+DunsCheckUnique		GAB/DirParametersEntity
+DefaultPartyType		GAB/DirParametersEntity
+EnableEditForExternallyMaintainedFields		GAB/DirParametersEntity
+BackingTable_DirParametersRelationshipId		GAB/DirParametersEntity
       ])
       .registerPath("addressbooks_dir.nameaffixes");
   }
 }
-mixin(EntityCalls!("DirNameAffixEntity"));
+mixin(EntityCalls!("DirParametersEntity"));
 
 version(test_library) {
   unittest {
-    assert(DirNameAffixEntity);
+    assert(DirParametersEntity);
   
-    auto entity = DirNameAffixEntity;
+    auto entity = DirParametersEntity;
   }
 }

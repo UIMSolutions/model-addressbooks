@@ -3,27 +3,27 @@ module models.addressbooks.entities.fias.estatestatus;
 @safe:
 import models.addressbooks;
 
-class DDirNameAffixEntity : DOOPEntity {
-  mixin(EntityThis!("DirNameAffixEntity"));
+class DFiasEstateStatusEntity : DOOPEntity {
+  mixin(EntityThis!("FiasEstateStatusEntity"));
   
   override void initialize() {
     super.initialize;
 
     this
       .addValues([ // individual values
-        "Affix":	StringAttribute,
-        "Type":	StringAttribute,
-        "BackingTable_DirNameAffixRelationshipId":	StringAttribute,
+estStatId		GAB/FiasEstateStatusEntity
+backingTable_FiasEstateStatusRelationshipId		GAB/FiasEstateStatusEntity
+relationship_PrimaryCompanyContextRelationshipId		GAB/FiasEstateStatusEntity
       ])
-      .registerPath("addressbooks_dir.nameaffixes");
+      .registerPath("addressbooks_fias.estatestatu");
   }
 }
-mixin(EntityCalls!("DirNameAffixEntity"));
+mixin(EntityCalls!("FiasEstateStatusEntity"));
 
 version(test_library) {
   unittest {
-    assert(DirNameAffixEntity);
+    assert(FiasEstateStatusEntity);
   
-    auto entity = DirNameAffixEntity;
+    auto entity = FiasEstateStatusEntity;
   }
 }

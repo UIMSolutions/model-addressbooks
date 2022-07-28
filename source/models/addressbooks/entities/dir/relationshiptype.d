@@ -3,27 +3,35 @@ module models.addressbooks.entities.dir.relationshiptype;
 @safe:
 import models.addressbooks;
 
-class DDirNameAffixEntity : DOOPEntity {
-  mixin(EntityThis!("DirNameAffixEntity"));
+class DDirPartyRelationshipEntity : DOOPEntity {
+  mixin(EntityThis!("DirPartyRelationshipEntity"));
   
   override void initialize() {
     super.initialize;
 
     this
       .addValues([ // individual values
-        "Affix":	StringAttribute,
-        "Type":	StringAttribute,
-        "BackingTable_DirNameAffixRelationshipId":	StringAttribute,
+legalEntityDataArea		GAB/DirPartyRelationshipEntity
+relationshipType		GAB/DirPartyRelationshipEntity
+validFrom		GAB/DirPartyRelationshipEntity
+validTo		GAB/DirPartyRelationshipEntity
+childPartyId		GAB/DirPartyRelationshipEntity
+childParty		GAB/DirPartyRelationshipEntity
+parentParty		GAB/DirPartyRelationshipEntity
+nullableParentPartyId		GAB/DirPartyRelationshipEntity
+parentPartyId		GAB/DirPartyRelationshipEntity
+systemType		GAB/DirPartyRelationshipEntity
+backingTable_DirPartyRelationshipRelationshipId		GAB/DirPartyRelationshipEntity
       ])
-      .registerPath("addressbooks_dir.nameaffixes");
+      .registerPath("addressbooks.dir.relationshiptypes");
   }
 }
-mixin(EntityCalls!("DirNameAffixEntity"));
+mixin(EntityCalls!("DirPartyRelationshipEntity"));
 
 version(test_library) {
   unittest {
-    assert(DirNameAffixEntity);
+    assert(DirPartyRelationshipEntity);
   
-    auto entity = DirNameAffixEntity;
+    auto entity = DirPartyRelationshipEntity;
   }
 }

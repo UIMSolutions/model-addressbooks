@@ -11,9 +11,9 @@ class DDirExternalRoleEntity : DOOPEntity {
 
     this
       .addValues([ // individual values
-        "Role": StringAttribute,
-        "Type":	StringAttribute,
-        "BackingTable_DirExternalRoleRelationshipId": StringAttribute,
+        "role": StringAttribute,
+        "type":	StringAttribute,
+        "backingTable_DirExternalRoleRelationshipId": StringAttribute,
       ])
       .registerPath("addressbooks_dir.externalrole");
   }
