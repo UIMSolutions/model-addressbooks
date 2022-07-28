@@ -3,27 +3,37 @@ module models.addressbooks.entities.dir.persons.user;
 @safe:
 import models.addressbooks;
 
-class DDirNameAffixEntity : DOOPEntity {
-  mixin(EntityThis!("DirNameAffixEntity"));
+class DDirPersonUserEntity : DOOPEntity {
+  mixin(EntityThis!("DirPersonUserEntity"));
   
   override void initialize() {
     super.initialize;
 
     this
       .addValues([ // individual values
-        "Affix":	StringAttribute,
-        "Type":	StringAttribute,
-        "BackingTable_DirNameAffixRelationshipId":	StringAttribute,
+        "userId": StringAttribute, 
+        "partyNumber": StringAttribute, 
+        "personName": StringAttribute, 
+        "personNameAlias": StringAttribute, 
+        "userEmail": StringAttribute, 
+        "personPrimaryEmail": StringAttribute, 
+        "validFrom": StringAttribute, 
+        "validTo": StringAttribute, 
+        "user": StringAttribute, 
+        "personParty": StringAttribute, 
+        "relationship_DirPersonBaseEntityRelationshipId": StringAttribute, 
+        "relationship_SystemUserEntityRelationshipId": StringAttribute, 
+        "backingTable_DirPersonUserRelationshipId": StringAttribute, 
       ])
-      .registerPath("addressbooks_dir.nameaffixes");
+      .registerPath("addressbooks_dir.persons.users");
   }
 }
-mixin(EntityCalls!("DirNameAffixEntity"));
+mixin(EntityCalls!("DirPersonUserEntity"));
 
 version(test_library) {
   unittest {
-    assert(DirNameAffixEntity);
+    assert(DirPersonUserEntity);
   
-    auto entity = DirNameAffixEntity;
+    auto entity = DirPersonUserEntity;
   }
 }
