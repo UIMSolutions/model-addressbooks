@@ -3,27 +3,33 @@ module models.addressbooks.entities.dir.persons.namehistorical;
 @safe:
 import models.addressbooks;
 
-class DDirNameAffixEntity : DOOPEntity {
-  mixin(EntityThis!("DirNameAffixEntity"));
+class DDirPersonNameHistoricalEntity : DOOPEntity {
+  mixin(EntityThis!("DirPersonNameHistoricalEntity"));
   
   override void initialize() {
     super.initialize;
 
     this
       .addValues([ // individual values
-        "Affix":	StringAttribute,
-        "Type":	StringAttribute,
-        "BackingTable_DirNameAffixRelationshipId":	StringAttribute,
+        "FirstName": StringAttribute, 
+        "LastNamePrefix": StringAttribute, 
+        "LastName": StringAttribute, 
+        "MiddleName": StringAttribute, 
+        "Person": StringAttribute, 
+        "ValidFrom": StringAttribute, 
+        "ValidTo": StringAttribute, 
+        "PartyNumber": StringAttribute, 
+        "BackingTable_DirPersonNameRelationshipId": StringAttribute, 
       ])
-      .registerPath("addressbooks_dir.nameaffixes");
+      .registerPath("addressbooks_dir.persons.namehistorical");
   }
 }
-mixin(EntityCalls!("DirNameAffixEntity"));
+mixin(EntityCalls!("DirPersonNameHistoricalEntity"));
 
 version(test_library) {
   unittest {
-    assert(DirNameAffixEntity);
+    assert(DirPersonNameHistoricalEntity);
   
-    auto entity = DirNameAffixEntity;
+    auto entity = DirPersonNameHistoricalEntity;
   }
 }
