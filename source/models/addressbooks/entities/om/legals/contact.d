@@ -1,29 +1,40 @@
-module models.addressbooks.entities.om.businessunit;
+module models.addressbooks.entities.om.legals.contact;
 
 @safe:
 import models.addressbooks;
 
-class DDirNameAffixEntity : DOOPEntity {
-  mixin(EntityThis!("DirNameAffixEntity"));
+class DOmLegalEntityContactEntity : DOOPEntity {
+  mixin(EntityThis!("OmLegalEntityContactEntity"));
   
   override void initialize() {
     super.initialize;
 
     this
       .addValues([ // individual values
-        "Affix":	StringAttribute,
-        "Type":	StringAttribute,
-        "BackingTable_DirNameAffixRelationshipId":	StringAttribute,
+PartyNumber		GAB/OmLegalEntityContactEntity
+LocationId		GAB/OmLegalEntityContactEntity
+Description		GAB/OmLegalEntityContactEntity
+Type		GAB/OmLegalEntityContactEntity
+CountryRegionCode		GAB/OmLegalEntityContactEntity
+Locator		GAB/OmLegalEntityContactEntity
+LocatorExtension		GAB/OmLegalEntityContactEntity
+Purpose		GAB/OmLegalEntityContactEntity
+IsMobilePhone		GAB/OmLegalEntityContactEntity
+IsPrimary		GAB/OmLegalEntityContactEntity
+IsPrivate		GAB/OmLegalEntityContactEntity
+DataArea		GAB/OmLegalEntityContactEntity
+Relationship_OMLegalEntityRelationshipId		GAB/OmLegalEntityContactEntity
+BackingTable_DirPartyContactEntityRelationshipId		GAB/OmLegalEntityContactEntity
       ])
-      .registerPath("addressbooks_dir.nameaffixes");
+      .registerPath("addressbooks_om.legals.contacts");
   }
 }
-mixin(EntityCalls!("DirNameAffixEntity"));
+mixin(EntityCalls!("OmLegalEntityContactEntity"));
 
 version(test_library) {
   unittest {
-    assert(DirNameAffixEntity);
+    assert(OmLegalEntityContactEntity);
   
-    auto entity = DirNameAffixEntity;
+    auto entity = OmLegalEntityContactEntity;
   }
 }
