@@ -11,108 +11,108 @@ class DOMLegalEntity : DOOPEntity {
 
     this
       .addValues([ // individual values
-NameAlias		GAB/OMLegalEntity
-PartyNumber		GAB/OMLegalEntity
-AddressBooks		GAB/OMLegalEntity
-LanguageId		GAB/OMLegalEntity
-FullPrimaryAddress		GAB/OMLegalEntity
-AddressDescription		GAB/OMLegalEntity
-AddressZipCode		GAB/OMLegalEntity
-AddressCity		GAB/OMLegalEntity
-AddressCountryRegionId		GAB/OMLegalEntity
-AddressCountryRegionISOCode		GAB/OMLegalEntity
-AddressCounty		GAB/OMLegalEntity
-AddressDistrictName		GAB/OMLegalEntity
-AddressLatitude		GAB/OMLegalEntity
-AddressLocationRoles		GAB/OMLegalEntity
-AddressLongitude		GAB/OMLegalEntity
-AddressState		GAB/OMLegalEntity
-AddressStreet		GAB/OMLegalEntity
-AddressTimeZone		GAB/OMLegalEntity
-AddressValidFrom		GAB/OMLegalEntity
-AddressValidTo		GAB/OMLegalEntity
-PrimaryContactEmail		GAB/OMLegalEntity
-PrimaryContactEmailDescription		GAB/OMLegalEntity
-PrimaryContactEmailIsIM		GAB/OMLegalEntity
-PrimaryContactEmailPurpose		GAB/OMLegalEntity
-PrimaryContactFax		GAB/OMLegalEntity
-PrimaryContactFaxDescription		GAB/OMLegalEntity
-PrimaryContactFaxExtension		GAB/OMLegalEntity
-PrimaryContactFaxPurpose		GAB/OMLegalEntity
-PrimaryContactPhone		GAB/OMLegalEntity
-PrimaryContactPhoneDescription		GAB/OMLegalEntity
-PrimaryContactPhoneExtension		GAB/OMLegalEntity
-PrimaryContactPhoneIsMobile		GAB/OMLegalEntity
-PrimaryContactPhonePurpose		GAB/OMLegalEntity
-PrimaryContactTelex		GAB/OMLegalEntity
-PrimaryContactTelexDescription		GAB/OMLegalEntity
-PrimaryContactTelexPurpose		GAB/OMLegalEntity
-PrimaryContactURL		GAB/OMLegalEntity
-PrimaryContactURLDescription		GAB/OMLegalEntity
-PrimaryContactURLPurpose		GAB/OMLegalEntity
-PrimaryContactFacebook		GAB/OMLegalEntity
-PrimaryContactFacebookDescription		GAB/OMLegalEntity
-PrimaryContactFacebookIsPrivate		GAB/OMLegalEntity
-PrimaryContactFacebookPurpose		GAB/OMLegalEntity
-PrimaryContactLinkedIn		GAB/OMLegalEntity
-PrimaryContactLinkedInDescription		GAB/OMLegalEntity
-PrimaryContactLinkedInIsPrivate		GAB/OMLegalEntity
-PrimaryContactLinkedInPurpose		GAB/OMLegalEntity
-PrimaryContactTwitter		GAB/OMLegalEntity
-PrimaryContactTwitterDescription		GAB/OMLegalEntity
-PrimaryContactTwitterIsPrivate		GAB/OMLegalEntity
-PrimaryContactTwitterPurpose		GAB/OMLegalEntity
-LegalEntityId		GAB/OMLegalEntity
-PartyType		GAB/OMLegalEntity
-PhoneticName		GAB/OMLegalEntity
-AccountingPersonnel		GAB/OMLegalEntity
-CompanyRepresentative		GAB/OMLegalEntity
-StartDateOfBusiness		GAB/OMLegalEntity
-InitialCapitalInvestment		GAB/OMLegalEntity
-BusinessItem		GAB/OMLegalEntity
-CertifiedTaxAccountantName		GAB/OMLegalEntity
-ExternalLegalRepresentativeName		GAB/OMLegalEntity
-PersonInCharge		GAB/OMLegalEntity
-AccountsOfficeReferenceNumber		GAB/OMLegalEntity
-CommerceRegistration		GAB/OMLegalEntity
-LegalForm		GAB/OMLegalEntity
-DNBRoutingNumber		GAB/OMLegalEntity
-TraderNumber		GAB/OMLegalEntity
-FICreditorID		GAB/OMLegalEntity
-NationalRegistryNumber		GAB/OMLegalEntity
-PrintCorrectiveInvoice		GAB/OMLegalEntity
-PrintCorrectiveInvoiceStartingDate		GAB/OMLegalEntity
-CompanyType		GAB/OMLegalEntity
-CurpNumber		GAB/OMLegalEntity
-CurpLegalRepresentative		GAB/OMLegalEntity
-LegalRepresentativeName		GAB/OMLegalEntity
-RfcLegalRepresentative		GAB/OMLegalEntity
-Rfc		GAB/OMLegalEntity
-StateInscription		GAB/OMLegalEntity
-NationalClassificationOfCompanyEconomicActivity		GAB/OMLegalEntity
-PrimaryAddressLocationId		GAB/OMLegalEntity
-RegistrationNumber		GAB/OMLegalEntity
-SoftwareIdentificationCode		GAB/OMLegalEntity
-FiscalCode		GAB/OMLegalEntity
-LegalNature		GAB/OMLegalEntity
-CUC		GAB/OMLegalEntity
-CompanyName		GAB/OMLegalEntity
-CompanyCountry		GAB/OMLegalEntity
-ReportFolder		GAB/OMLegalEntity
-PrintINNKPPInAddress		GAB/OMLegalEntity
-PrintEnterpriseRegister		GAB/OMLegalEntity
-NAICS		GAB/OMLegalEntity
-UseForFinancialConsolidationProcess		GAB/OMLegalEntity
-UseForFinancialEliminationProcess		GAB/OMLegalEntity
-LocalizationCountryRegionCode		GAB/OMLegalEntity
-VATNum		GAB/OMLegalEntity
-ImportVATNum		GAB/OMLegalEntity
-ProfitMarginScheme		GAB/OMLegalEntity
-VATRefund		GAB/OMLegalEntity
-VATOnCustomerBehalf		GAB/OMLegalEntity
-Relationship_VATNumTaxVATNumRelationshipId		GAB/OMLegalEntity
-Relationship_ImportVATNumTaxVATNumRelationshipId		GAB/OMLegalEntity
-BackingTable_DirPartyBaseEntityRelationshipId		GAB/OMLegalEntity
+        "nameAlias": StringAttribute,
+        "partyNumber": StringAttribute,
+        "addressBooks": StringAttribute,
+        "languageId": StringAttribute,
+        "fullPrimaryAddress": StringAttribute,
+        "addressDescription": StringAttribute,
+        "addressZipCode": StringAttribute,
+        "addressCity": StringAttribute,
+        "addressCountryRegionId": StringAttribute,
+        "addressCountryRegionISOCode": StringAttribute,
+        "addressCounty": StringAttribute,
+        "addressDistrictName": StringAttribute,
+        "addressLatitude": StringAttribute,
+        "addressLocationRoles": StringAttribute,
+        "addressLongitude": StringAttribute,
+        "addressState": StringAttribute,
+        "addressStreet": StringAttribute,
+        "addressTimeZone": StringAttribute,
+        "addressValidFrom": StringAttribute,
+        "addressValidTo": StringAttribute,
+        "primaryContactEmail": StringAttribute,
+        "primaryContactEmailDescription": StringAttribute,
+        "primaryContactEmailIsIM": StringAttribute,
+        "primaryContactEmailPurpose": StringAttribute,
+        "primaryContactFax": StringAttribute,
+        "primaryContactFaxDescription": StringAttribute,
+        "primaryContactFaxExtension": StringAttribute,
+        "primaryContactFaxPurpose": StringAttribute,
+        "primaryContactPhone": StringAttribute,
+        "primaryContactPhoneDescription": StringAttribute,
+        "primaryContactPhoneExtension": StringAttribute,
+        "primaryContactPhoneIsMobile": StringAttribute,
+        "primaryContactPhonePurpose": StringAttribute,
+        "primaryContactTelex": StringAttribute,
+        "primaryContactTelexDescription": StringAttribute,
+        "primaryContactTelexPurpose": StringAttribute,
+        "primaryContactURL": StringAttribute,
+        "primaryContactURLDescription": StringAttribute,
+        "primaryContactURLPurpose": StringAttribute,
+        "primaryContactFacebook": StringAttribute,
+        "primaryContactFacebookDescription": StringAttribute,
+        "primaryContactFacebookIsPrivate": StringAttribute,
+        "primaryContactFacebookPurpose": StringAttribute,
+        "primaryContactLinkedIn": StringAttribute,
+        "primaryContactLinkedInDescription": StringAttribute,
+        "primaryContactLinkedInIsPrivate": StringAttribute,
+        "primaryContactLinkedInPurpose": StringAttribute,
+        "primaryContactTwitter": StringAttribute,
+        "primaryContactTwitterDescription": StringAttribute,
+        "primaryContactTwitterIsPrivate": StringAttribute,
+        "primaryContactTwitterPurpose": StringAttribute,
+        "LegalEntityId": StringAttribute,
+        "partyType": StringAttribute,
+        "phoneticName": StringAttribute,
+        "accountingPersonnel": StringAttribute,
+        "companyRepresentative": StringAttribute,
+        "startDateOfBusiness": StringAttribute,
+        "initialCapitalInvestment": StringAttribute,
+        "businessItem": StringAttribute,
+        "certifiedTaxAccountantName": StringAttribute,
+        "externalLegalRepresentativeName": StringAttribute,
+        "personInCharge": StringAttribute,
+        "accountsOfficeReferenceNumber": StringAttribute,
+        "commerceRegistration": StringAttribute,
+        "legalForm": StringAttribute,
+        "dnbRoutingNumber": StringAttribute,
+        "traderNumber": StringAttribute,
+        "fiCreditorID": StringAttribute,
+        "nationalRegistryNumber": StringAttribute,
+        "printCorrectiveInvoice": StringAttribute,
+        "printCorrectiveInvoiceStartingDate": StringAttribute,
+        "companyType": StringAttribute,
+        "curpNumber": StringAttribute,
+        "curpLegalRepresentative": StringAttribute,
+        "legalRepresentativeName": StringAttribute,
+        "rfcLegalRepresentative": StringAttribute,
+        "rfc": StringAttribute,
+        "stateInscription": StringAttribute,
+        "nationalClassificationOfCompanyEconomicActivity": StringAttribute,
+        "primaryAddressLocationId": StringAttribute,
+        "RegistrationNumber": StringAttribute,
+        "softwareIdentificationCode": StringAttribute,
+        "FiscalCode": StringAttribute,
+        "LegalNature": StringAttribute,
+        "cuc": StringAttribute,
+        "companyName": StringAttribute,
+        "companyCountry": StringAttribute,
+        "reportFolder": StringAttribute,
+        "printINNKPPInAddress": StringAttribute,
+        "printEnterpriseRegister": StringAttribute,
+        "naics": StringAttribute,
+        "useForFinancialConsolidationProcess": StringAttribute,
+        "useForFinancialEliminationProcess": StringAttribute,
+        "localizationCountryRegionCode": StringAttribute,
+        "vatNum": StringAttribute,
+        "importVATNum": StringAttribute,
+        "profitMarginScheme": StringAttribute,
+        "vatRefund": StringAttribute,
+        "vatOnCustomerBehalf": StringAttribute,
+        "relationship_VATNumTaxVATNumRelationshipId": StringAttribute,
+        "relationship_ImportVATNumTaxVATNumRelationshipId": StringAttribute,
+        "backingTable_DirPartyBaseEntityRelationshipId": StringAttribute,
       ])
       .registerPath("addressbooks_.om.legals");
   }
