@@ -1,6 +1,5 @@
 module models.addressbooks.entities.logistics.addresses.enterprisezipcodeJapan;
 
-module models.addressbooks.entities.logistics.locationrole;
 
 @safe:
 import models.addressbooks;
