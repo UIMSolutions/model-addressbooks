@@ -1,29 +1,32 @@
-module models.addressbooks.entities.logistics.locationrolex;
+module models.addressbooks.entities.logistics.locationrole;
 
 @safe:
 import models.addressbooks;
 
-class DDirNameAffixEntity : DOOPEntity {
-  mixin(EntityThis!("DirNameAffixEntity"));
+class DLogisticsLocationRoleEntity : DOOPEntity {
+  mixin(EntityThis!("LogisticsLocationRoleEntity"));
   
   override void initialize() {
     super.initialize;
 
     this
       .addValues([ // individual values
-        "Affix":	StringAttribute,
-        "Type":	StringAttribute,
-        "BackingTable_DirNameAffixRelationshipId":	StringAttribute,
+purpose		GAB/LogisticsLocationRoleEntity
+postalAddress		GAB/LogisticsLocationRoleEntity
+contactInfo		GAB/LogisticsLocationRoleEntity
+language		GAB/LogisticsLocationRoleEntity
+type		GAB/LogisticsLocationRoleEntity
+backingTable_LogisticsLocationRoleTranslationRelationshipId		GAB/LogisticsLocationRoleEntity
       ])
-      .registerPath("addressbooks_dir.nameaffixes");
+      .registerPath("addressbooks_logistics.locationroles");
   }
 }
-mixin(EntityCalls!("DirNameAffixEntity"));
+mixin(EntityCalls!("LogisticsLocationRoleEntity"));
 
 version(test_library) {
   unittest {
-    assert(DirNameAffixEntity);
+    assert(LogisticsLocationRoleEntity);
   
-    auto entity = DirNameAffixEntity;
+    auto entity = LogisticsLocationRoleEntity;
   }
 }
