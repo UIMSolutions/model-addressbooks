@@ -1,7 +1,5 @@
 module models.addressbooks.entities.logistics.addresses.city;
 
-module models.addressbooks.entities.logistics.locationrole;
-
 @safe:
 import models.addressbooks;
 
