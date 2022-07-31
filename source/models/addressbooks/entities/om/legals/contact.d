@@ -11,20 +11,19 @@ class DOmLegalEntityContactEntity : DOOPEntity {
 
     this
       .addValues([ // individual values
-PartyNumber		GAB/OmLegalEntityContactEntity
-LocationId		GAB/OmLegalEntityContactEntity
-Description		GAB/OmLegalEntityContactEntity
-Type		GAB/OmLegalEntityContactEntity
-CountryRegionCode		GAB/OmLegalEntityContactEntity
-Locator		GAB/OmLegalEntityContactEntity
-LocatorExtension		GAB/OmLegalEntityContactEntity
-Purpose		GAB/OmLegalEntityContactEntity
-IsMobilePhone		GAB/OmLegalEntityContactEntity
-IsPrimary		GAB/OmLegalEntityContactEntity
-IsPrivate		GAB/OmLegalEntityContactEntity
-DataArea		GAB/OmLegalEntityContactEntity
-Relationship_OMLegalEntityRelationshipId		GAB/OmLegalEntityContactEntity
-BackingTable_DirPartyContactEntityRelationshipId		GAB/OmLegalEntityContactEntity
+        "partyNumber": StringAttribute, 
+        "locationId": UUIDAttribute, 
+        "type": StringAttribute, 
+        "countryRegionCode": StringAttribute, 
+        "locator": StringAttribute, 
+        "locatorExtension": StringAttribute, 
+        "purpose": StringAttribute, 
+        "isMobilePhone": BooleanAttribute, 
+        "isPrimary": BooleanAttribute, 
+        "isPrivate": BooleanAttribute, 
+        "dataArea": StringAttribute, 
+        "relationship_OMLegalEntityRelationshipId": UUIDAttribute, 
+        "backingTable_DirPartyContactEntityRelationshipId": UUIDAttribute, 
       ])
       .registerPath("addressbooks_om.legals.contacts");
   }
