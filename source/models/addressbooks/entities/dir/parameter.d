@@ -11,15 +11,15 @@ class DDirParametersEntity : DOOPEntity {
 
     this
       .addValues([ // individual values
-Key		GAB/DirParametersEntity
-NameSequence		GAB/DirParametersEntity
-DeletePartiesWithNoRole		GAB/DirParametersEntity
-UseDuplicateCheck		GAB/DirParametersEntity
-DunsDisplayOnAddress		GAB/DirParametersEntity
-DunsCheckUnique		GAB/DirParametersEntity
-DefaultPartyType		GAB/DirParametersEntity
-EnableEditForExternallyMaintainedFields		GAB/DirParametersEntity
-BackingTable_DirParametersRelationshipId		GAB/DirParametersEntity
+key		GAB/DirParametersEntity
+nameSequence		GAB/DirParametersEntity
+deletePartiesWithNoRole		GAB/DirParametersEntity
+useDuplicateCheck		GAB/DirParametersEntity
+dunsDisplayOnAddress		GAB/DirParametersEntity
+dunsCheckUnique		GAB/DirParametersEntity
+defaultPartyType		GAB/DirParametersEntity
+enableEditForExternallyMaintainedFields		GAB/DirParametersEntity
+backingTable_DirParametersRelationshipId		GAB/DirParametersEntity
       ])
       .registerPath("addressbooks_dir.nameaffixes");
   }
