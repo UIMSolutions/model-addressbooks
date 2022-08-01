@@ -3,27 +3,35 @@ module models.addressbooks.entities.fias.room;
 @safe:
 import models.addressbooks;
 
-class DDirNameAffixEntity : DOOPEntity {
-  mixin(EntityThis!("DirNameAffixEntity"));
+class DFiasRoomEntity : DOOPEntity {
+  mixin(EntityThis!("FiasRoomEntity"));
   
   override void initialize() {
     super.initialize;
 
     this
       .addValues([ // individual values
-        "Affix":	StringAttribute,
-        "Type":	StringAttribute,
-        "BackingTable_DirNameAffixRelationshipId":	StringAttribute,
+roomId		GAB/FiasRoomEntity
+roomGuid		GAB/FiasRoomEntity
+regionCode		GAB/FiasRoomEntity
+houseGuid		GAB/FiasRoomEntity
+flatNumber		GAB/FiasRoomEntity
+flatType		GAB/FiasRoomEntity
+postalCode		GAB/FiasRoomEntity
+startDate		GAB/FiasRoomEntity
+endDate		GAB/FiasRoomEntity
+backingTable_FiasRoomRelationshipId		GAB/FiasRoomEntity
+relationship_PrimaryCompanyContextRelationshipId		GAB/FiasRoomEntity
       ])
       .registerPath("addressbooks_dir.nameaffixes");
   }
 }
-mixin(EntityCalls!("DirNameAffixEntity"));
+mixin(EntityCalls!("FiasRoomEntity"));
 
 version(test_library) {
   unittest {
-    assert(DirNameAffixEntity);
+    assert(FiasRoomEntity);
   
-    auto entity = DirNameAffixEntity;
+    auto entity = FiasRoomEntity;
   }
 }
