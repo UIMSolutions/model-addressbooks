@@ -3,27 +3,28 @@ module models.addressbooks.entities.fias.structurestatus;
 @safe:
 import models.addressbooks;
 
-class DDirNameAffixEntity : DOOPEntity {
-  mixin(EntityThis!("DirNameAffixEntity"));
+class DFiasStructureStatusEntity : DOOPEntity {
+  mixin(EntityThis!("FiasStructureStatusEntity"));
   
   override void initialize() {
     super.initialize;
 
     this
       .addValues([ // individual values
-        "Affix":	StringAttribute,
-        "Type":	StringAttribute,
-        "BackingTable_DirNameAffixRelationshipId":	StringAttribute,
+strStatId		GAB/FiasStructureStatusEntity
+shortName		GAB/FiasStructureStatusEntity
+backingTable_FiasStructureStatusRelationshipId		GAB/FiasStructureStatusEntity
+relationship_PrimaryCompanyContextRelationshipId		GAB/FiasStructureStatusEntity
       ])
       .registerPath("addressbooks_dir.nameaffixes");
   }
 }
-mixin(EntityCalls!("DirNameAffixEntity"));
+mixin(EntityCalls!("FiasStructureStatusEntity"));
 
 version(test_library) {
   unittest {
-    assert(DirNameAffixEntity);
+    assert(FiasStructureStatusEntity);
   
-    auto entity = DirNameAffixEntity;
+    auto entity = FiasStructureStatusEntity;
   }
 }
