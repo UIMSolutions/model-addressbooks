@@ -3,27 +3,32 @@ module models.addressbooks.entities.dir.nameaffix;
 @safe:
 import models.addressbooks;
 
-class DDirNameAffixEntity : DOOPEntity {
-  mixin(EntityThis!("DirNameAffixEntity"));
+class DOMTeamTypeEntity : DOOPEntity {
+  mixin(EntityThis!("OMTeamTypeEntity"));
   
   override void initialize() {
     super.initialize;
 
     this
       .addValues([ // individual values
-        "Affix":	StringAttribute,
-        "Type":	StringAttribute,
-        "BackingTable_DirNameAffixRelationshipId":	StringAttribute,
+allowContact		GAB/OMTeamTypeEntity
+allowContractor		GAB/OMTeamTypeEntity
+allowCustomer		GAB/OMTeamTypeEntity
+allowEmployee		GAB/OMTeamTypeEntity
+allowVendor		GAB/OMTeamTypeEntity
+isSystemCriterion		GAB/OMTeamTypeEntity
+requiresAXUser		GAB/OMTeamTypeEntity
+backingTable_OMTeamMembershipCriterionRelationshipId		GAB/OMTeamTypeEntity
       ])
       .registerPath("addressbooks_dir.nameaffixes");
   }
 }
-mixin(EntityCalls!("DirNameAffixEntity"));
+mixin(EntityCalls!("OMTeamTypeEntity"));
 
 version(test_library) {
   unittest {
-    assert(DirNameAffixEntity);
+    assert(OMTeamTypeEntity);
   
-    auto entity = DirNameAffixEntity;
+    auto entity = OMTeamTypeEntity;
   }
 }
