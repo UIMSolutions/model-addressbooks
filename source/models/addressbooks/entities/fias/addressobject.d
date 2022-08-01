@@ -11,32 +11,32 @@ class DFiasAddressObjectEntityy : DOOPEntity {
 
     this
       .addValues([ // individual values
-AOId		GAB/FiasAddressObjectEntity
-AOGuid		GAB/FiasAddressObjectEntity
-AOLevel		GAB/FiasAddressObjectEntity
-RegionCode		GAB/FiasAddressObjectEntity
-AreaCode		GAB/FiasAddressObjectEntity
-CityCode		GAB/FiasAddressObjectEntity
-CtArCode		GAB/FiasAddressObjectEntity
-PlaceCode		GAB/FiasAddressObjectEntity
-PlanCode		GAB/FiasAddressObjectEntity
-StreetCode		GAB/FiasAddressObjectEntity
-ExtrCode		GAB/FiasAddressObjectEntity
-ActStatus		GAB/FiasAddressObjectEntity
-LiveStatus		GAB/FiasAddressObjectEntity
-OperStatus		GAB/FiasAddressObjectEntity
-OffName		GAB/FiasAddressObjectEntity
-ParentGuid		GAB/FiasAddressObjectEntity
-ShortName		GAB/FiasAddressObjectEntity
-PostalCode		GAB/FiasAddressObjectEntity
-IFNSFL		GAB/FiasAddressObjectEntity
-TerrIFNSFL		GAB/FiasAddressObjectEntity
-OKATO		GAB/FiasAddressObjectEntity
-DivType		GAB/FiasAddressObjectEntity
+aoId		GAB/FiasAddressObjectEntity
+aoGuid		GAB/FiasAddressObjectEntity
+aoLevel		GAB/FiasAddressObjectEntity
+regionCode		GAB/FiasAddressObjectEntity
+areaCode		GAB/FiasAddressObjectEntity
+cityCode		GAB/FiasAddressObjectEntity
+ctArCode		GAB/FiasAddressObjectEntity
+placeCode		GAB/FiasAddressObjectEntity
+planCode		GAB/FiasAddressObjectEntity
+streetCode		GAB/FiasAddressObjectEntity
+extrCode		GAB/FiasAddressObjectEntity
+actStatus		GAB/FiasAddressObjectEntity
+liveStatus		GAB/FiasAddressObjectEntity
+operStatus		GAB/FiasAddressObjectEntity
+offName		GAB/FiasAddressObjectEntity
+parentGuid		GAB/FiasAddressObjectEntity
+shortName		GAB/FiasAddressObjectEntity
+postalCode		GAB/FiasAddressObjectEntity
+ifnsfl		GAB/FiasAddressObjectEntity
+terrIFNSFL		GAB/FiasAddressObjectEntity
+okato		GAB/FiasAddressObjectEntity
+divType		GAB/FiasAddressObjectEntity
 NextId		GAB/FiasAddressObjectEntity
-PrevId		GAB/FiasAddressObjectEntity
-BackingTable_FiasAddressObjectRelationshipId		GAB/FiasAddressObjectEntity
-Relationship_PrimaryCompanyContextRelationshipId		GAB/FiasAddressObjectEntity
+prevId		GAB/FiasAddressObjectEntity
+backingTable_FiasAddressObjectRelationshipId		GAB/FiasAddressObjectEntity
+relationship_PrimaryCompanyContextRelationshipId		GAB/FiasAddressObjectEntity
       ])
       .registerPath("addressbooks_dir.nameaffixes");
   }
