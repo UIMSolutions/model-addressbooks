@@ -11,9 +11,15 @@ class DDirNameAffixEntity : DOOPEntity {
 
     this
       .addValues([ // individual values
-        "Affix":	StringAttribute,
-        "Type":	StringAttribute,
-        "BackingTable_DirNameAffixRelationshipId":	StringAttribute,
+Name		GAB/OMTeamV2Entity
+PartyNumber		GAB/OMTeamV2Entity
+TeamType		GAB/OMTeamV2Entity
+Administrator		GAB/OMTeamV2Entity
+IsActive		GAB/OMTeamV2Entity
+Description		GAB/OMTeamV2Entity
+TeamTypeName		GAB/OMTeamV2Entity
+Relationship_OMTeamTypeEntityRelationshipId		GAB/OMTeamV2Entity
+BackingTable_OMTeamRelationshipId		GAB/OMTeamV2Entity
       ])
       .registerPath("addressbooks_dir.nameaffixes");
   }
