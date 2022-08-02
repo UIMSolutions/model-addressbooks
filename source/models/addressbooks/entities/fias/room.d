@@ -22,7 +22,7 @@ class DFiasRoomEntity : DOOPEntity {
         "backingTable_FiasRoomRelationshipId": UUIDAttribute,
         "relationship_PrimaryCompanyContextRelationshipId": UUIDAttribute,
       ])
-      .registerPath("addressbooks_dir.nameaffixes");
+      .registerPath("addressbooks_fias.rooms");
   }
 }
 mixin(EntityCalls!("FiasRoomEntity"));
