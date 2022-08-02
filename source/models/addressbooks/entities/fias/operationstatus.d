@@ -11,13 +11,13 @@ class DFIASOperationStatusesEntity : DOOPEntity {
 
     this
       .addValues([ // individual values
-FiasOperationType_RU		GAB/FIASOperationStatusesEntity
-OperationDescription		GAB/FIASOperationStatusesEntity
-OperationStatus		GAB/FIASOperationStatusesEntity
-BackingTable_FIASOperationStatuses_RURelationshipId		GAB/FIASOperationStatusesEntity
-Relationship_PrimaryCompanyContextRelationshipId		GAB/FIASOperationStatusesEntity
+        "fiasOperationType_RU": StringAttribute, 
+        "operationDescription": StringAttribute, 
+        "operationStatus": StringAttribute, 
+        "backingTable_FIASOperationStatuses_RURelationshipId": UUIDAttribute, 
+        "relationship_PrimaryCompanyContextRelationshipId": UUIDAttribute, 
       ])
-      .registerPath("addressbooks_dir.nameaffixes");
+      .registerPath("addressbooks_fias.operationstatuses");
   }
 }
 mixin(EntityCalls!("FIASOperationStatusesEntity"));
