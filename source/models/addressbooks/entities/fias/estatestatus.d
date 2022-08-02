@@ -11,11 +11,11 @@ class DFiasEstateStatusEntity : DOOPEntity {
 
     this
       .addValues([ // individual values
-estStatId		GAB/FiasEstateStatusEntity
-backingTable_FiasEstateStatusRelationshipId		GAB/FiasEstateStatusEntity
-relationship_PrimaryCompanyContextRelationshipId		GAB/FiasEstateStatusEntity
+        "estStatId": UUIDAttribute,
+        "backingTable_FiasEstateStatusRelationshipId": UUIDAttribute,
+        "relationship_PrimaryCompanyContextRelationshipId": UUIDAttribute,
       ])
-      .registerPath("addressbooks_fias.estatestatu");
+      .registerPath("addressbooks_fias.estatestatuses");
   }
 }
 mixin(EntityCalls!("FiasEstateStatusEntity"));
