@@ -11,17 +11,17 @@ class DDirPersonNameHistoricalEntity : DOOPEntity {
 
     this
       .addValues([ // individual values
-        "FirstName": StringAttribute, 
-        "LastNamePrefix": StringAttribute, 
-        "LastName": StringAttribute, 
-        "MiddleName": StringAttribute, 
-        "Person": StringAttribute, 
-        "ValidFrom": StringAttribute, 
-        "ValidTo": StringAttribute, 
-        "PartyNumber": StringAttribute, 
-        "BackingTable_DirPersonNameRelationshipId": StringAttribute, 
+        "firstName": StringAttribute, 
+        "lastNamePrefix": StringAttribute, 
+        "lastName": StringAttribute, 
+        "middleName": StringAttribute, 
+        "person": StringAttribute, 
+        "validFrom": StringAttribute, 
+        "validTo": StringAttribute, 
+        "partyNumber": StringAttribute, 
+        "backingTable_DirPersonNameRelationshipId": UUIDAttribute, 
       ])
-      .registerPath("addressbooks_dir.persons.namehistorical");
+      .registerPath("addressbooks_dir.persons.namehistoricals");
   }
 }
 mixin(EntityCalls!("DirPersonNameHistoricalEntity"));
