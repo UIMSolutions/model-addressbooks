@@ -3,7 +3,7 @@ module models.addressbooks.entities.fias.stead;
 @safe:
 import models.addressbooks;
 
-class DDirNameAffixEntity : DOOPEntity {
+class DFiasSteadEntity : DOOPEntity {
   mixin(EntityThis!("FiasSteadEntity"));
   
   override void initialize() {
@@ -11,20 +11,20 @@ class DDirNameAffixEntity : DOOPEntity {
 
     this
       .addValues([ // individual values
-steadId		GAB/FiasSteadEntity
-steadGuid		GAB/FiasSteadEntity
-parentGuid		GAB/FiasSteadEntity
-regionCode		GAB/FiasSteadEntity
-divType		GAB/FiasSteadEntity
-number		GAB/FiasSteadEntity
-postalCode		GAB/FiasSteadEntity
-ifnsfl		GAB/FiasSteadEntity
-terrIFNSFL		GAB/FiasSteadEntity
-okato		GAB/FiasSteadEntity
-startDate		GAB/FiasSteadEntity
-endDate		GAB/FiasSteadEntity
-backingTable_FiasSteadRelationshipId		GAB/FiasSteadEntity
-relationship_PrimaryCompanyContextRelationshipId		GAB/FiasSteadEntity
+        "steadId": StringAttribute, 
+        "steadGuid": StringAttribute, 
+        "parentGuid": StringAttribute, 
+        "regionCode": StringAttribute, 
+        "divType": StringAttribute, 
+        "number": StringAttribute, 
+        "postalCode": StringAttribute, 
+        "ifnsfl": StringAttribute, 
+        "terrIFNSFL": StringAttribute, 
+        "okato": StringAttribute, 
+        "startDate": StringAttribute, 
+        "endDate": StringAttribute, 
+        "backingTable_FiasSteadRelationshipId": StringAttribute, 
+        "relationship_PrimaryCompanyContextRelationshipId": StringAttribute, 
       ])
       .registerPath("addressbooks_dir.nameaffixes");
   }
