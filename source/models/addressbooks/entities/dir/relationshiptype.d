@@ -11,17 +11,17 @@ class DDirPartyRelationshipEntity : DOOPEntity {
 
     this
       .addValues([ // individual values
-legalEntityDataArea		GAB/DirPartyRelationshipEntity
-relationshipType		GAB/DirPartyRelationshipEntity
-validFrom		GAB/DirPartyRelationshipEntity
-validTo		GAB/DirPartyRelationshipEntity
-childPartyId		GAB/DirPartyRelationshipEntity
-childParty		GAB/DirPartyRelationshipEntity
-parentParty		GAB/DirPartyRelationshipEntity
-nullableParentPartyId		GAB/DirPartyRelationshipEntity
-parentPartyId		GAB/DirPartyRelationshipEntity
-systemType		GAB/DirPartyRelationshipEntity
-backingTable_DirPartyRelationshipRelationshipId		GAB/DirPartyRelationshipEntity
+        "legalEntityDataArea": StringAttribute, 
+        "relationshipType": StringAttribute, 
+        "validFrom": StringAttribute, 
+        "validTo": StringAttribute, 
+        "childPartyId": UUIDAttribute, 
+        "childParty": StringAttribute, 
+        "parentParty": StringAttribute, 
+        "nullableParentPartyId": UUIDAttribute, 
+        "parentPartyId": UUIDAttribute, 
+        "systemType": StringAttribute, 
+        "backingTable_DirPartyRelationshipRelationshipId": UUIDAttribute, 
       ])
       .registerPath("addressbooks.dir.relationshiptypes");
   }
