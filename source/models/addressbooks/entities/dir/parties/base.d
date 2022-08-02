@@ -11,10 +11,9 @@ class DDirAddressBooksEntity : DOOPEntity {
 
     this
       .addValues([ // individual values
-        "system": StringAttribute, 
-        "backingTable_DirAddressBookRelationshipId": UUIDAttribute, 
+...
       ])
-      .registerPath("addressbooks_dir.addressbook");
+      .registerPath("addressbooks_dir.dir.parties.bases");
   }
 }
 mixin(EntityCalls!("DirAddressBooksEntity"));
