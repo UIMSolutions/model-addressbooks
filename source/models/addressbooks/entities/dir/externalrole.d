@@ -15,7 +15,7 @@ class DDirExternalRoleEntity : DOOPEntity {
         "type":	StringAttribute,
         "backingTable_DirExternalRoleRelationshipId": StringAttribute,
       ])
-      .registerPath("addressbooks_dir.externalrole");
+      .registerPath("addressbooks_dir.externalroles");
   }
 }
 mixin(EntityCalls!("DirExternalRoleEntity"));
