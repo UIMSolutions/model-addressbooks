@@ -3,30 +3,34 @@ module models.addressbooks.entities.logistics.addresses.city;
 @safe:
 import models.addressbooks;
 
-class DLogisticsLocationRoleEntity : DOOPEntity {
-  mixin(EntityThis!("LogisticsLocationRoleEntity"));
+class DLogisticsAddressCityEntity : DOOPEntity {
+  mixin(EntityThis!("LogisticsAddressCityEntity"));
   
   override void initialize() {
     super.initialize;
 
     this
       .addValues([ // individual values
-purpose		GAB/LogisticsLocationRoleEntity
-postalAddress		GAB/LogisticsLocationRoleEntity
-contactInfo		GAB/LogisticsLocationRoleEntity
-language		GAB/LogisticsLocationRoleEntity
-type		GAB/LogisticsLocationRoleEntity
-backingTable_LogisticsLocationRoleTranslationRelationshipId		GAB/LogisticsLocationRoleEntity
+        "cityKey": StringAttribute,
+        "countryRegionId": StringAttribute,
+        "stateId": UUIDAttribute,
+        "countyId": UUIDAttribute,
+        "brazilCityCode": StringAttribute,
+        "cityInKana": StringAttribute,
+        "relationship_CountryRegionRelationshipId": UUIDAttribute,
+        "relationship_StateRelationshipId": UUIDAttribute,
+        "relationship_CountyRelationshipId": UUIDAttribute,
+        "backingTable_LogisticsAddressCityRelationshipId": UUIDAttribute,
       ])
-      .registerPath("addressbooks_logistics.locationroles");
+      .registerPath("addressbooks_logistics.addresses.cities");
   }
 }
-mixin(EntityCalls!("LogisticsLocationRoleEntity"));
+mixin(EntityCalls!("LogisticsAddressCityEntity"));
 
 version(test_library) {
   unittest {
-    assert(LogisticsLocationRoleEntity);
+    assert(LogisticsAddressCityEntity);
   
-    auto entity = LogisticsLocationRoleEntity;
+    auto entity = LogisticsAddressCityEntity;
   }
 }
