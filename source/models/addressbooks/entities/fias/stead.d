@@ -26,7 +26,7 @@ class DFiasSteadEntity : DOOPEntity {
         "backingTable_FiasSteadRelationshipId": StringAttribute, 
         "relationship_PrimaryCompanyContextRelationshipId": StringAttribute, 
       ])
-      .registerPath("addressbooks_dir.nameaffixes");
+      .registerPath("addressbooks_fias.steads");
   }
 }
 mixin(EntityCalls!("FiasSteadEntity"));
