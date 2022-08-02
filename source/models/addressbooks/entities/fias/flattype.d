@@ -11,10 +11,10 @@ class DFiasFlatTypeEntity : DOOPEntity {
 
     this
       .addValues([ // individual values
-flTypeId		GAB/FiasFlatTypeEntity
-shortName		GAB/FiasFlatTypeEntity
-backingTable_FiasFlatTypeRelationshipId		GAB/FiasFlatTypeEntity
-relationship_PrimaryCompanyContextRelationshipId		GAB/FiasFlatTypeEntity
+        "flTypeId": StringAttribute,
+        "shortName": StringAttribute,
+        "backingTable_FiasFlatTypeRelationshipId": StringAttribute,
+        "relationship_PrimaryCompanyContextRelationshipId": StringAttribute,
       ])
       .registerPath("addressbooks_fias.flattypes");
   }
