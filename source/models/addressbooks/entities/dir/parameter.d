@@ -11,17 +11,17 @@ class DDirParametersEntity : DOOPEntity {
 
     this
       .addValues([ // individual values
-key		GAB/DirParametersEntity
-nameSequence		GAB/DirParametersEntity
-deletePartiesWithNoRole		GAB/DirParametersEntity
-useDuplicateCheck		GAB/DirParametersEntity
-dunsDisplayOnAddress		GAB/DirParametersEntity
-dunsCheckUnique		GAB/DirParametersEntity
-defaultPartyType		GAB/DirParametersEntity
-enableEditForExternallyMaintainedFields		GAB/DirParametersEntity
-backingTable_DirParametersRelationshipId		GAB/DirParametersEntity
+        "key": StringAttribute,
+        "nameSequence": StringAttribute,
+        "deletePartiesWithNoRole": StringAttribute,
+        "useDuplicateCheck": StringAttribute,
+        "dunsDisplayOnAddress": StringAttribute,
+        "dunsCheckUnique": StringAttribute,
+        "defaultPartyType": StringAttribute,
+        "enableEditForExternallyMaintainedFields": StringAttribute,
+        "backingTable_DirParametersRelationshipId": UUIDAttribute,
       ])
-      .registerPath("addressbooks_dir.nameaffixes");
+      .registerPath("addressbooks_dir.parameters");
   }
 }
 mixin(EntityCalls!("DirParametersEntity"));
