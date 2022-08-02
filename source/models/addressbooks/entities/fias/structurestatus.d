@@ -11,12 +11,12 @@ class DFiasStructureStatusEntity : DOOPEntity {
 
     this
       .addValues([ // individual values
-strStatId		GAB/FiasStructureStatusEntity
-shortName		GAB/FiasStructureStatusEntity
-backingTable_FiasStructureStatusRelationshipId		GAB/FiasStructureStatusEntity
-relationship_PrimaryCompanyContextRelationshipId		GAB/FiasStructureStatusEntity
+        "strStatId": StringAttribute,
+        "shortName": StringAttribute,
+        "backingTable_FiasStructureStatusRelationshipId": StringAttribute,
+        "relationship_PrimaryCompanyContextRelationshipId": StringAttribute,
       ])
-      .registerPath("addressbooks_dir.nameaffixes");
+      .registerPath("addressbooks_fias.structurestatuses");
   }
 }
 mixin(EntityCalls!("FiasStructureStatusEntity"));
