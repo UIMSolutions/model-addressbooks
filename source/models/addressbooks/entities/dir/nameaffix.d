@@ -11,9 +11,9 @@ class DDirNameAffixEntity : DOOPEntity {
 
     this
       .addValues([ // individual values
-        "Affix":	StringAttribute,
-        "Type":	StringAttribute,
-        "BackingTable_DirNameAffixRelationshipId":	StringAttribute,
+        "affix":	StringAttribute,
+        "type":	StringAttribute,
+        "backingTable_DirNameAffixRelationshipId":	UUIDAttribute,
       ])
       .registerPath("addressbooks_dir.nameaffixes");
   }
