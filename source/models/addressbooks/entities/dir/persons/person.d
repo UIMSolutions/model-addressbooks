@@ -14,7 +14,7 @@ class DDirPersonEntity : DOOPEntity {
         "partyNumber": StringAttribute, 
         "nameAlias": StringAttribute, 
         "knownAs": StringAttribute, 
-        "languageId": StringAttribute, 
+        "languageId": UUIDAttribute, 
         "addressBooks": StringAttribute, 
         "anniversaryDay": StringAttribute, 
         "anniversaryMonth": StringAttribute, 
@@ -41,7 +41,7 @@ class DDirPersonEntity : DOOPEntity {
         "addressCounty": StringAttribute, 
         "addressDistrictName": StringAttribute, 
         "addressLatitude": StringAttribute, 
-        "addressLocationId": StringAttribute, 
+        "addressLocationId": UUIDAttribute, 
         "addressLocationRoles": StringAttribute, 
         "addressLongitude": StringAttribute, 
         "addressState": StringAttribute, 
@@ -91,8 +91,8 @@ class DDirPersonEntity : DOOPEntity {
         "middleName": StringAttribute, 
         "personNameValidFrom": StringAttribute, 
         "personNameValidTo": StringAttribute, 
-        "electronicLocationId": StringAttribute, 
-        "backingTable_DirPersonBaseEntityRelationshipId": StringAttribute, 
+        "electronicLocationId": UUIDAttribute, 
+        "backingTable_DirPersonBaseEntityRelationshipId": UUIDAttribute, 
       ])
       .registerPath("addressbooks_dir.persons");
   }
