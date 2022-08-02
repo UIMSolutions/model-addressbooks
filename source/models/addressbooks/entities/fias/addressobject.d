@@ -11,34 +11,34 @@ class DFiasAddressObjectEntityy : DOOPEntity {
 
     this
       .addValues([ // individual values
-aoId		GAB/FiasAddressObjectEntity
-aoGuid		GAB/FiasAddressObjectEntity
-aoLevel		GAB/FiasAddressObjectEntity
-regionCode		GAB/FiasAddressObjectEntity
-areaCode		GAB/FiasAddressObjectEntity
-cityCode		GAB/FiasAddressObjectEntity
-ctArCode		GAB/FiasAddressObjectEntity
-placeCode		GAB/FiasAddressObjectEntity
-planCode		GAB/FiasAddressObjectEntity
-streetCode		GAB/FiasAddressObjectEntity
-extrCode		GAB/FiasAddressObjectEntity
-actStatus		GAB/FiasAddressObjectEntity
-liveStatus		GAB/FiasAddressObjectEntity
-operStatus		GAB/FiasAddressObjectEntity
-offName		GAB/FiasAddressObjectEntity
-parentGuid		GAB/FiasAddressObjectEntity
-shortName		GAB/FiasAddressObjectEntity
-postalCode		GAB/FiasAddressObjectEntity
-ifnsfl		GAB/FiasAddressObjectEntity
-terrIFNSFL		GAB/FiasAddressObjectEntity
-okato		GAB/FiasAddressObjectEntity
-divType		GAB/FiasAddressObjectEntity
-NextId		GAB/FiasAddressObjectEntity
-prevId		GAB/FiasAddressObjectEntity
-backingTable_FiasAddressObjectRelationshipId		GAB/FiasAddressObjectEntity
-relationship_PrimaryCompanyContextRelationshipId		GAB/FiasAddressObjectEntity
+        "aoId": UUIDAttribute, 
+        "aoGuid": UUIDAttribute, 
+        "aoLevel": StringAttribute, 
+        "regionCode": StringAttribute, 
+        "areaCode": StringAttribute, 
+        "cityCode": StringAttribute, 
+        "ctArCode": StringAttribute, 
+        "placeCode": StringAttribute, 
+        "planCode": StringAttribute, 
+        "streetCode": StringAttribute, 
+        "extrCode": StringAttribute, 
+        "actStatus": StringAttribute, 
+        "liveStatus": StringAttribute, 
+        "operStatus": StringAttribute, 
+        "offName": StringAttribute, 
+        "parentGuid": UUIDAttribute, 
+        "shortName": StringAttribute, 
+        "postalCode": StringAttribute, 
+        "ifnsfl": StringAttribute, 
+        "terrIFNSFL": StringAttribute, 
+        "okato": StringAttribute, 
+        "divType": StringAttribute, 
+        "NextId": UUIDAttribute, 
+        "prevId": UUIDAttribute, 
+        "backingTable_FiasAddressObjectRelationshipId": UUIDAttribute, 
+        "relationship_PrimaryCompanyContextRelationshipId": UUIDAttribute, 
       ])
-      .registerPath("addressbooks_dir.nameaffixes");
+      .registerPath("addressbooks_fias.addressobjects");
   }
 }
 mixin(EntityCalls!("FiasAddressObjectEntity"));
