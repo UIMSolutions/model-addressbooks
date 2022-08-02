@@ -11,25 +11,23 @@ class DDirPartyContactEntity : DOOPEntity {
 
     this
       .addValues([ // individual values
-        "PartyNumber": StringAttribute, 
-        "LocationId": StringAttribute, 
-        "Description": StringAttribute, 
-        "Type": StringAttribute, 
-        "CountryRegionCode": StringAttribute, 
-        "Locator": StringAttribute, 
-        "LocatorExtension": StringAttribute, 
-        "Purpose": StringAttribute, 
-        "IsMobilePhone": StringAttribute, 
-        "IsInstantMessage": StringAttribute, 
-        "IsPrimary": StringAttribute, 
-        "IsPrivate": StringAttribute, 
-        "Party": StringAttribute, 
-        "Location": StringAttribute, 
-        "DunsNumberRecId": StringAttribute, 
-        "ParentLocation": StringAttribute, 
-        "LogisticsElectronicAddressRecId": StringAttribute, 
-        "BackingTable_LogisticsLocationRelationshipId": StringAttribute, 
-
+        "partyNumber": StringAttribute, 
+        "locationId": UUIDAttribute, 
+        "type": StringAttribute, 
+        "countryRegionCode": StringAttribute, 
+        "locator": StringAttribute, 
+        "locatorExtension": StringAttribute, 
+        "purpose": StringAttribute, 
+        "isMobilePhone": BooleanAttribute, 
+        "isInstantMessage": BooleanAttribute, 
+        "isPrimary": BooleanAttribute, 
+        "isPrivate": BooleanAttribute, 
+        "party": StringAttribute, 
+        "location": StringAttribute, 
+        "dunsNumberRecId": UUIDAttribute, 
+        "parentLocation": StringAttribute, 
+        "logisticsElectronicAddressRecId": UUIDAttribute, 
+        "backingTable_LogisticsLocationRelationshipId": UUIDAttribute, 
       ])
       .registerPath("addressbooks_dir.parties.contacts");
   }
