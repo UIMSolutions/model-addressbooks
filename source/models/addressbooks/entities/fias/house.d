@@ -11,23 +11,23 @@ class DFiasHouseEntity : DOOPEntity {
 
     this
       .addValues([ // individual values
-houseId		GAB/FiasHouseEntity
-houseGuid		GAB/FiasHouseEntity
-aOGuid		GAB/FiasHouseEntity
-houseNum		GAB/FiasHouseEntity
-buildNum		GAB/FiasHouseEntity
-strucNum		GAB/FiasHouseEntity
-divType		GAB/FiasHouseEntity
-estStatus		GAB/FiasHouseEntity
-strStatus		GAB/FiasHouseEntity
-postalCode		GAB/FiasHouseEntity
-iFNSFL		GAB/FiasHouseEntity
-terrIFNSFL		GAB/FiasHouseEntity
-oKATO		GAB/FiasHouseEntity
-startDate		GAB/FiasHouseEntity
-endDate		GAB/FiasHouseEntity
-backingTable_FiasHouseRelationshipId		GAB/FiasHouseEntity
-relationship_PrimaryCompanyContextRelationshipId		GAB/FiasHouseEntity
+        "houseId": UUIDAttribute,
+        "houseGuid": StringAttribute,
+        "aOGuid": UUIDAttribute,
+        "houseNum": StringAttribute,
+        "buildNum": StringAttribute,
+        "strucNum": StringAttribute,
+        "divType": StringAttribute,
+        "estStatus": StringAttribute,
+        "strStatus": StringAttribute,
+        "postalCode": StringAttribute,
+        "iFNSFL": StringAttribute,
+        "terrIFNSFL": StringAttribute,
+        "oKATO": StringAttribute,
+        "startDate": StringAttribute,
+        "endDate": StringAttribute,
+        "backingTable_FiasHouseRelationshipId": UUIDAttribute,
+        "relationship_PrimaryCompanyContextRelationshipId": UUIDAttribute,
       ])
       .registerPath("addressbooks_fias.houses");
   }
