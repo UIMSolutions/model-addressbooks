@@ -12,7 +12,7 @@ class DDirNameSequenceEntity : DOOPEntity {
     this
       .addValues([ // individual values
         "nameSequence":	StringAttribute, 
-        "languageId":	StringAttribute, 
+        "languageId":	UUIDAttribute, 
         "firstPosition":	StringAttribute, 
         "separator1":	StringAttribute, 
         "separator1Spaces":	StringAttribute, 
@@ -23,7 +23,7 @@ class DDirNameSequenceEntity : DOOPEntity {
         "separator3":	StringAttribute, 
         "separator3Spaces":	StringAttribute, 
         "lastPosition":	StringAttribute, 
-        "backingTable_DirNameSequenceTranslationRelationshipId":	StringAttribute, 
+        "backingTable_DirNameSequenceTranslationRelationshipId":	UUIDAttribute, 
       ])
       .registerPath("addressbooks_dir.namesequences");
   }
