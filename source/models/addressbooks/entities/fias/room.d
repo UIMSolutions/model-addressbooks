@@ -11,17 +11,16 @@ class DFiasRoomEntity : DOOPEntity {
 
     this
       .addValues([ // individual values
-roomId		GAB/FiasRoomEntity
-roomGuid		GAB/FiasRoomEntity
-regionCode		GAB/FiasRoomEntity
-houseGuid		GAB/FiasRoomEntity
-flatNumber		GAB/FiasRoomEntity
-flatType		GAB/FiasRoomEntity
-postalCode		GAB/FiasRoomEntity
-startDate		GAB/FiasRoomEntity
-endDate		GAB/FiasRoomEntity
-backingTable_FiasRoomRelationshipId		GAB/FiasRoomEntity
-relationship_PrimaryCompanyContextRelationshipId		GAB/FiasRoomEntity
+        "roomId": UUIDAttribute,
+        "regionCode": StringAttribute,
+        "houseId": UUIDAttribute,
+        "flatNumber": StringAttribute,
+        "flatType": StringAttribute,
+        "postalCode": StringAttribute,
+        "startDate": StringAttribute,
+        "endDate": StringAttribute,
+        "backingTable_FiasRoomRelationshipId": UUIDAttribute,
+        "relationship_PrimaryCompanyContextRelationshipId": UUIDAttribute,
       ])
       .registerPath("addressbooks_dir.nameaffixes");
   }
