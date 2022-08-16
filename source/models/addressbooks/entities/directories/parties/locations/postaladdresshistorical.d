@@ -14,7 +14,7 @@ class DDirAddressBooksEntity : DOOPEntity {
         "system": StringAttribute, ....
         "backingTable_DirAddressBookRelationshipId": UUIDAttribute, 
       ])
-      .registerPath("addressbooks_dir.parties.locations.locationpostaladdresshistoricals");
+      .registerPath("addressbooks_directories.parties.locations.locationpostaladdresshistoricals");
   }
 }
 mixin(EntityCalls!("DirAddressBooksEntity"));

@@ -1,10 +1,10 @@
-module models.addressbooks.entities.dir.nameaffix;
+module models.addressbooks.entities.directories.nameaffix;
 
 @safe:
 import models.addressbooks;
 
-class DDirNameAffixEntity : DOOPEntity {
-  mixin(EntityThis!("DirNameAffixEntity"));
+class DDirectoryNameAffixEntity : DOOPEntity {
+  mixin(EntityThis!("DirectoryNameAffixEntity"));
   
   override void initialize() {
     super.initialize;
@@ -15,15 +15,15 @@ class DDirNameAffixEntity : DOOPEntity {
         "type":	StringAttribute,
         "backingTable_DirNameAffixRelationshipId":	UUIDAttribute,
       ])
-      .registerPath("addressbooks_dir.nameaffixes");
+      .registerPath("addressbooks_directories.nameaffixes");
   }
 }
-mixin(EntityCalls!("DirNameAffixEntity"));
+mixin(EntityCalls!("DirectoryNameAffixEntity"));
 
 version(test_library) {
   unittest {
-    assert(DirNameAffixEntity);
+    assert(DirectoryNameAffixEntity);
   
-    auto entity = DirNameAffixEntity;
+    auto entity = DirectoryNameAffixEntity;
   }
 }

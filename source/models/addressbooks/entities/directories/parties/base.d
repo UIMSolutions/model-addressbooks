@@ -13,7 +13,7 @@ class DDirAddressBooksEntity : DOOPEntity {
       .addValues([ // individual values
 ...
       ])
-      .registerPath("addressbooks_dir.dir.parties.bases");
+      .registerPath("addressbooks_directories.dir.parties.bases");
   }
 }
 mixin(EntityCalls!("DirAddressBooksEntity"));

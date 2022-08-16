@@ -21,7 +21,7 @@ class DDirPersonNameHistoricalEntity : DOOPEntity {
         "partyNumber": StringAttribute, 
         "backingTable_DirPersonNameRelationshipId": UUIDAttribute, 
       ])
-      .registerPath("addressbooks_dir.persons.namehistoricals");
+      .registerPath("addressbooks_directories.persons.namehistoricals");
   }
 }
 mixin(EntityCalls!("DirPersonNameHistoricalEntity"));

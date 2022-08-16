@@ -25,7 +25,7 @@ class DDirPersonUserEntity : DOOPEntity {
         "relationship_SystemUserEntityRelationshipId": StringAttribute, 
         "backingTable_DirPersonUserRelationshipId": StringAttribute, 
       ])
-      .registerPath("addressbooks_dir.persons.users");
+      .registerPath("addressbooks_directories.persons.users");
   }
 }
 mixin(EntityCalls!("DirPersonUserEntity"));

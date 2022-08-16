@@ -94,7 +94,7 @@ class DDirPersonEntity : DOOPEntity {
         "electronicLocationId": UUIDAttribute, 
         "backingTable_DirPersonBaseEntityRelationshipId": UUIDAttribute, 
       ])
-      .registerPath("addressbooks_dir.persons");
+      .registerPath("addressbooks_directories.persons");
   }
 }
 mixin(EntityCalls!("DirPersonEntity"));

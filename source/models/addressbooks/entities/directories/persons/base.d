@@ -93,7 +93,7 @@ class DDirPersonBaseEntity : DOOPEntity {
         "partyRecordId": UUIDAttribute, 
         "backingTable_DirPartyBaseEntityRelationshipId": UUIDAttribute, 
       ])
-      .registerPath("addressbooks_dir.persons.bases");
+      .registerPath("addressbooks_directories.persons.bases");
   }
 }
 mixin(EntityCalls!("DirPersonBaseEntity"));

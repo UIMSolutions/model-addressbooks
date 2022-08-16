@@ -3,8 +3,8 @@ module models.addressbooks.entities.dir.parameter;
 @safe:
 import models.addressbooks;
 
-class DDirParametersEntity : DOOPEntity {
-  mixin(EntityThis!("DirParametersEntity"));
+class DDirectoryParametersEntity : DOOPEntity {
+  mixin(EntityThis!("DirectoryParametersEntity"));
   
   override void initialize() {
     super.initialize;
@@ -21,15 +21,15 @@ class DDirParametersEntity : DOOPEntity {
         "enableEditForExternallyMaintainedFields": StringAttribute,
         "backingTable_DirParametersRelationshipId": UUIDAttribute,
       ])
-      .registerPath("addressbooks_dir.parameters");
+      .registerPath("addressbooks_directories.parameters");
   }
 }
-mixin(EntityCalls!("DirParametersEntity"));
+mixin(EntityCalls!("DirectoryParametersEntity"));
 
 version(test_library) {
   unittest {
-    assert(DirParametersEntity);
+    assert(DirectoryParametersEntity);
   
-    auto entity = DirParametersEntity;
+    auto entity = DirectoryParametersEntity;
   }
 }

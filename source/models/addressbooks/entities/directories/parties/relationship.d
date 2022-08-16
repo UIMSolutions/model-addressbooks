@@ -23,7 +23,7 @@ class DDirPartyRelationshipEntity : DOOPEntity {
         "systemType": StringAttribute, 
         "backingTable_DirPartyRelationshipRelationshipId": StringAttribute, 
       ])
-      .registerPath("addressbooks_dir.parties.relationships");
+      .registerPath("addressbooks_directories.parties.relationships");
   }
 }
 mixin(EntityCalls!("DirPartyRelationshipEntity"));

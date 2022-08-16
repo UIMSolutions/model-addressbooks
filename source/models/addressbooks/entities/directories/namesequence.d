@@ -3,8 +3,8 @@ module models.addressbooks.entities.dir.namesequence;
 @safe:
 import models.addressbooks;
 
-class DDirNameSequenceEntity : DOOPEntity {
-  mixin(EntityThis!("DirNameSequenceEntity"));
+class DDirectoryrNameSequenceEntity : DOOPEntity {
+  mixin(EntityThis!("DirectoryrNameSequenceEntity"));
   
   override void initialize() {
     super.initialize;
@@ -25,15 +25,15 @@ class DDirNameSequenceEntity : DOOPEntity {
         "lastPosition":	StringAttribute, 
         "backingTable_DirNameSequenceTranslationRelationshipId":	UUIDAttribute, 
       ])
-      .registerPath("addressbooks_dir.namesequences");
+      .registerPath("addressbooks_directories.namesequences");
   }
 }
-mixin(EntityCalls!("DirNameSequenceEntity"));
+mixin(EntityCalls!("DirectoryrNameSequenceEntity"));
 
 version(test_library) {
   unittest {
-    assert(DirNameSequenceEntity);
+    assert(DirectoryrNameSequenceEntity);
   
-    auto entity = DirNameSequenceEntity;
+    auto entity = DirectoryrNameSequenceEntity;
   }
 }

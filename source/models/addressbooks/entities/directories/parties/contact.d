@@ -29,7 +29,7 @@ class DDirPartyContactEntity : DOOPEntity {
         "logisticsElectronicAddressRecId": UUIDAttribute, 
         "backingTable_LogisticsLocationRelationshipId": UUIDAttribute, 
       ])
-      .registerPath("addressbooks_dir.parties.contacts");
+      .registerPath("addressbooks_directories.parties.contacts");
   }
 }
 mixin(EntityCalls!("DirPartyContactEntity"));
