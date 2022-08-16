@@ -1,10 +1,10 @@
-module models.addressbooks.entities.dir.addressbooks;
+module models.addressbooks.entities.directories.addressbooks;
 
 @safe:
 import models.addressbooks;
 
-class DDirAddressBooksEntity : DOOPEntity {
-  mixin(EntityThis!("DirAddressBooksEntity"));
+class DDirectoryAddressBooksEntity : DOOPEntity {
+  mixin(EntityThis!("DirectoryAddressBooksEntity"));
   
   override void initialize() {
     super.initialize;
@@ -14,15 +14,13 @@ class DDirAddressBooksEntity : DOOPEntity {
         "system": StringAttribute, 
         "backingTable_DirAddressBookRelationshipId": UUIDAttribute, 
       ])
-      .registerPath("addressbooks_dir.addressbook");
+      .registerPath("addressbooks_directories.addressbooks");
   }
 }
-mixin(EntityCalls!("DirAddressBooksEntity"));
+mixin(EntityCalls!("DirectoryAddressBooksEntity"));
 
-version(test_library) {
-  unittest {
-    assert(DirAddressBooksEntity);
+version(test_model_addressbooks) { unittest {
+  assert(DirectoryAddressBooksEntity);
   
-    auto entity = DirAddressBooksEntity;
-  }
-}
+  auto entity = DirectoryAddressBooksEntity;
+}}
