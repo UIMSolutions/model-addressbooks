@@ -1,10 +1,10 @@
-module models.addressbooks.entities.dir.parties.contact;
+module models.addressbooks.entities.directories.parties.contact;
 
 @safe:
 import models.addressbooks;
 
-class DDirPartyContactEntity : DOOPEntity {
-  mixin(EntityThis!("DirPartyContactEntity"));
+class DDirectoryPartyContactEntity : DOOPEntity {
+  mixin(EntityThis!("DirectoryPartyContactEntity"));
   
   override void initialize() {
     super.initialize;
@@ -32,12 +32,12 @@ class DDirPartyContactEntity : DOOPEntity {
       .registerPath("addressbooks_directories.parties.contacts");
   }
 }
-mixin(EntityCalls!("DirPartyContactEntity"));
+mixin(EntityCalls!("DirectoryPartyContactEntity"));
 
 version(test_library) {
   unittest {
-    assert(DirPartyContactEntity);
+    assert(DirectoryPartyContactEntity);
   
-    auto entity = DirPartyContactEntity;
+    auto entity = DirectoryPartyContactEntity;
   }
 }

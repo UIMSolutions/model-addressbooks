@@ -1,4 +1,4 @@
-module models.addressbooks.entities.dir.persons.namehistorical;
+module models.addressbooks.entities.directories.persons.namehistorical;
 
 @safe:
 import models.addressbooks;

@@ -1,4 +1,4 @@
-module models.addressbooks.entities.dir.parameter;
+module models.addressbooks.entities.directories.parameter;
 
 @safe:
 import models.addressbooks;

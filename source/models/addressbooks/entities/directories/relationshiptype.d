@@ -1,10 +1,10 @@
-module models.addressbooks.entities.dir.relationshiptype;
+module models.addressbooks.entities.directories.relationshiptype;
 
 @safe:
 import models.addressbooks;
 
-class DDirPartyRelationshipEntity : DOOPEntity {
-  mixin(EntityThis!("DirPartyRelationshipEntity"));
+class DDirectoryPartyRelationshipEntity : DOOPEntity {
+  mixin(EntityThis!("DirectoryPartyRelationshipEntity"));
   
   override void initialize() {
     super.initialize;
@@ -23,15 +23,15 @@ class DDirPartyRelationshipEntity : DOOPEntity {
         "systemType": StringAttribute, 
         "backingTable_DirPartyRelationshipRelationshipId": UUIDAttribute, 
       ])
-      .registerPath("addressbooks.dir.relationshiptypes");
+      .registerPath("addressbooks_dir.relationshiptypes");
   }
 }
-mixin(EntityCalls!("DirPartyRelationshipEntity"));
+mixin(EntityCalls!("DirectoryPartyRelationshipEntity"));
 
 version(test_library) {
   unittest {
-    assert(DirPartyRelationshipEntity);
+    assert(DirectoryPartyRelationshipEntity);
   
-    auto entity = DirPartyRelationshipEntity;
+    auto entity = DirectoryPartyRelationshipEntity;
   }
 }

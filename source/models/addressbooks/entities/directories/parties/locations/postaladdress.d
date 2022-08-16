@@ -1,4 +1,4 @@
-module models.addressbooks.entities.dir.parties.locations.postaladdress;
+module models.addressbooks.entities.directories.parties.locations.postaladdress;
 
 @safe:
 import models.addressbooks;

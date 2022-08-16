@@ -1,9 +1,9 @@
-module models.addressbooks.entities.dir.parties;
+module models.addressbooks.entities.directories.parties;
 
 // Package
-public import models.addressbooks.entities.dir.parties.locations;
+public import models.addressbooks.entities.directories.parties.locations;
 
 // Module
-public import models.addressbooks.entities.dir.parties.base;
-public import models.addressbooks.entities.dir.parties.contact;
-public import models.addressbooks.entities.dir.parties.relationship;
+public import models.addressbooks.entities.directories.parties.base;
+public import models.addressbooks.entities.directories.parties.contact;
+public import models.addressbooks.entities.directories.parties.relationship;

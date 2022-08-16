@@ -1,4 +1,4 @@
-module models.addressbooks.entities.dir.parties.locations;
+module models.addressbooks.entities.directories.parties.locations;
 
-public import models.addressbooks.entities.dir.parties.locations.postaladdress;
-public import models.addressbooks.entities.dir.parties.locations.postaladdresshistorical;
+public import models.addressbooks.entities.directories.parties.locations.postaladdress;
+public import models.addressbooks.entities.directories.parties.locations.postaladdresshistorical;

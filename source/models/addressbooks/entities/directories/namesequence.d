@@ -1,4 +1,4 @@
-module models.addressbooks.entities.dir.namesequence;
+module models.addressbooks.entities.directories.namesequence;
 
 @safe:
 import models.addressbooks;

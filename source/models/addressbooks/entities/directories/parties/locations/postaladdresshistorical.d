@@ -1,4 +1,4 @@
-module models.addressbooks.entities.dir.parties.locations.locationpostaladdresshistorical;
+module models.addressbooks.entities.directories.parties.locations.locationpostaladdresshistorical;
 
 @safe:
 import models.addressbooks;

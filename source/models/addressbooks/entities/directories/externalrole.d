@@ -3,8 +3,8 @@ module models.addressbooks.entities.directories.externalrole;
 @safe:
 import models.addressbooks;
 
-class DDirectoriesExternalRoleEntity : DOOPEntity {
-  mixin(EntityThis!("DirectoriesExternalRoleEntity"));
+class DDirectoryExternalRoleEntity : DOOPEntity {
+  mixin(EntityThis!("DirectoryExternalRoleEntity"));
   
   override void initialize() {
     super.initialize;
@@ -18,12 +18,12 @@ class DDirectoriesExternalRoleEntity : DOOPEntity {
       .registerPath("addressbooks_directories.externalroles");
   }
 }
-mixin(EntityCalls!("DirectoriesExternalRoleEntity"));
+mixin(EntityCalls!("DirectoryExternalRoleEntity"));
 
 version(test_library) {
   unittest {
-    assert(DirectoriesExternalRoleEntity);
+    assert(DirectoryExternalRoleEntity);
   
-    auto entity = DirectoriesExternalRoleEntity;
+    auto entity = DirectoryExternalRoleEntity;
   }
 }
