@@ -11,7 +11,7 @@ class DFiasSteadEntity : DOOPEntity {
 
     this
       .addValues([ // individual values
-        "steadId": StringAttribute, 
+        "steadId": UUIDAttribute, 
         "steadGuid": StringAttribute, 
         "parentGuid": StringAttribute, 
         "regionCode": StringAttribute, 
@@ -23,8 +23,8 @@ class DFiasSteadEntity : DOOPEntity {
         "okato": StringAttribute, 
         "startDate": StringAttribute, 
         "endDate": StringAttribute, 
-        "backingTable_FiasSteadRelationshipId": StringAttribute, 
-        "relationship_PrimaryCompanyContextRelationshipId": StringAttribute, 
+        "backingTable_FiasSteadRelationshipId": UUIDAttribute, 
+        "relationship_PrimaryCompanyContextRelationshipId": UUIDAttribute, 
       ])
       .registerPath("addressbooks_fias.steads");
   }

@@ -36,7 +36,7 @@ class DDirPersonEntity : DOOPEntity {
         "professionalTitle": StringAttribute, 
         "fullPrimaryAddress": StringAttribute, 
         "addressCity": StringAttribute, 
-        "addressCountryRegionId": StringAttribute, 
+        "addressCountryRegionId": UUIDAttribute, 
         "addressCountryRegionISOCode": StringAttribute, 
         "addressCounty": StringAttribute, 
         "addressDistrictName": StringAttribute, 

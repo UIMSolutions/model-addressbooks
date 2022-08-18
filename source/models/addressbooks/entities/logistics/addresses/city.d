@@ -12,7 +12,7 @@ class DLogisticsAddressCityEntity : DOOPEntity {
     this
       .addValues([ // individual values
         "cityKey": StringAttribute,
-        "countryRegionId": StringAttribute,
+        "countryRegionId": UUIDAttribute,
         "stateId": UUIDAttribute,
         "countyId": UUIDAttribute,
         "brazilCityCode": StringAttribute,

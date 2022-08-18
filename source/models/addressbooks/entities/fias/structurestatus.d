@@ -11,10 +11,10 @@ class DFiasStructureStatusEntity : DOOPEntity {
 
     this
       .addValues([ // individual values
-        "strStatId": StringAttribute,
+        "strStatId": UUIDAttribute,
         "shortName": StringAttribute,
-        "backingTable_FiasStructureStatusRelationshipId": StringAttribute,
-        "relationship_PrimaryCompanyContextRelationshipId": StringAttribute,
+        "backingTable_FiasStructureStatusRelationshipId": UUIDAttribute,
+        "relationship_PrimaryCompanyContextRelationshipId": UUIDAttribute,
       ])
       .registerPath("addressbooks_fias.structurestatuses");
   }

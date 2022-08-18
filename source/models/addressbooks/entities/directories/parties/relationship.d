@@ -15,13 +15,13 @@ class DDirPartyRelationshipEntity : DOOPEntity {
         "relationshipType": StringAttribute, 
         "validFrom": StringAttribute, 
         "validTo": StringAttribute, 
-        "childPartyId": StringAttribute, 
+        "childPartyId": UUIDAttribute, 
         "childParty": StringAttribute, 
         "parentParty": StringAttribute, 
-        "nullableParentPartyId": StringAttribute, 
-        "parentPartyId": StringAttribute, 
+        "nullableParentPartyId": UUIDAttribute, 
+        "parentPartyId": UUIDAttribute, 
         "systemType": StringAttribute, 
-        "backingTable_DirPartyRelationshipRelationshipId": StringAttribute, 
+        "backingTable_DirPartyRelationshipRelationshipId": UUIDAttribute, 
       ])
       .registerPath("addressbooks_directories.parties.relationships");
   }

@@ -11,7 +11,7 @@ class DDirPersonUserEntity : DOOPEntity {
 
     this
       .addValues([ // individual values
-        "userId": StringAttribute, 
+        "userId": UUIDAttribute, 
         "partyNumber": StringAttribute, 
         "personName": StringAttribute, 
         "personNameAlias": StringAttribute, 
@@ -21,9 +21,9 @@ class DDirPersonUserEntity : DOOPEntity {
         "validTo": StringAttribute, 
         "user": StringAttribute, 
         "personParty": StringAttribute, 
-        "relationship_DirPersonBaseEntityRelationshipId": StringAttribute, 
-        "relationship_SystemUserEntityRelationshipId": StringAttribute, 
-        "backingTable_DirPersonUserRelationshipId": StringAttribute, 
+        "relationship_DirPersonBaseEntityRelationshipId": UUIDAttribute, 
+        "relationship_SystemUserEntityRelationshipId": UUIDAttribute, 
+        "backingTable_DirPersonUserRelationshipId": UUIDAttribute, 
       ])
       .registerPath("addressbooks_directories.persons.users");
   }

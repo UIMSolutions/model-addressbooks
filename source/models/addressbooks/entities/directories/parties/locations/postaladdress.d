@@ -30,7 +30,7 @@ class DDirPartyLocationPostalAddressEntity : DOOPEntity {
         "buildingCompliment": StringAttribute,
         "city": StringAttribute,
         "cityInKana": StringAttribute,
-        "countryRegionId": StringAttribute,
+        "countryRegionId": UUIDAttribute,
         "countryRegionISOCode": StringAttribute,
         "county": StringAttribute,
         "description": StringAttribute,
@@ -38,7 +38,7 @@ class DDirPartyLocationPostalAddressEntity : DOOPEntity {
         "dunsNumber": StringAttribute,
         "isPrivatePostalAddress": StringAttribute,
         "latitude": StringAttribute,
-        "locationId": StringAttribute,
+        "locationId": UUIDAttribute,
         "longitude": StringAttribute,
         "postBox": StringAttribute,
         "state": StringAttribute,
@@ -52,7 +52,7 @@ class DDirPartyLocationPostalAddressEntity : DOOPEntity {
         "roles": StringAttribute,
         "resolveDuplicateAddress": StringAttribute,
         "taxGroup": StringAttribute,
-        "backingTable_LogisticsPostalAddressBaseEntityRelationshipId": StringAttribute,
+        "backingTable_LogisticsPostalAddressBaseEntityRelationshipId": UUIDAttribute,
       ])
       .registerPath("addressbooks_directories.addressbook");
   }
