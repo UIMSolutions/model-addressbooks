@@ -12,12 +12,16 @@ class DLogisticsLocationRoleEntity : DOOPEntity {
 
     this
       .addValues([ // individual values
-purpose		GAB/LogisticsLocationRoleEntity
-postalAddress		GAB/LogisticsLocationRoleEntity
-contactInfo		GAB/LogisticsLocationRoleEntity
-language		GAB/LogisticsLocationRoleEntity
-type		GAB/LogisticsLocationRoleEntity
-backingTable_LogisticsLocationRoleTranslationRelationshipId		GAB/LogisticsLocationRoleEntity
+        "kanjiCity": StringAttribute,
+        "cityRecId": StringAttribute,
+        "countryRegionId": StringAttribute,
+        "kanjiDistrict": StringAttribute,
+        "kanjiPrefecture": StringAttribute,
+        "streetName": StringAttribute,
+        "individualEnterpriseBuildingNumber": StringAttribute,
+        "kanjiEnterpriseName": StringAttribute,
+        "kanjiStreet": StringAttribute,
+        "backingTable_LogisticsAddressZipCodeRelationshipId": StringAttribute,
       ])
       .registerPath("addressbooks_logistics.locationroles");
   }

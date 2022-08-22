@@ -1,32 +1,33 @@
-module models.addressbooks.entities.logistics.locationrole;
+module models.addressbooks.entities.logistics.addresses.countries.fiasidcode;
 
 @safe:
 import models.addressbooks;
 
-class DLogisticsLocationRoleEntity : DOOPEntity {
-  mixin(EntityThis!("LogisticsLocationRoleEntity"));
+class DLogisticsAddressFiasIdCodeEntity : DOOPEntity {
+  mixin(EntityThis!("LogisticsAddressFiasIdCodeEntity"));
   
   override void initialize() {
     super.initialize;
 
     this
       .addValues([ // individual values
-purpose		GAB/LogisticsLocationRoleEntity
-postalAddress		GAB/LogisticsLocationRoleEntity
-contactInfo		GAB/LogisticsLocationRoleEntity
-language		GAB/LogisticsLocationRoleEntity
-type		GAB/LogisticsLocationRoleEntity
-backingTable_LogisticsLocationRoleTranslationRelationshipId		GAB/LogisticsLocationRoleEntity
+        "fiasGuidId": StringAttribute,
+        "fiasParentGuidId": StringAttribute,
+        "refRecId": StringAttribute,
+        "refTableId": StringAttribute,
+        "versionId": StringAttribute,
+        "backingTable_LogisticsAddressFiasGuidCodes_RURelationshipId": StringAttribute,
+        "relationship_PrimaryCompanyContextRelationshipId": StringAttribute,
       ])
-      .registerPath("addressbooks_logistics.locationroles");
+      .registerPath("addressbooks_logistics.addresses.countries.fiasidcodes");
   }
 }
-mixin(EntityCalls!("LogisticsLocationRoleEntity"));
+mixin(EntityCalls!("LogisticsAddressFiasIdCodeEntity"));
 
 version(test_library) {
   unittest {
-    assert(LogisticsLocationRoleEntity);
+    assert(LogisticsAddressFiasIdCodeEntity);
   
-    auto entity = LogisticsLocationRoleEntity;
+    auto entity = LogisticsAddressFiasIdCodeEntity;
   }
 }

@@ -11,20 +11,19 @@ class DOMOperatingUnitContactEntity : DOOPEntity {
 
     this
       .addValues([ // individual values
-PartyNumber		GAB/OMOperatingUnitContactEntity
-LocationId		GAB/OMOperatingUnitContactEntity
-Description		GAB/OMOperatingUnitContactEntity
-Type		GAB/OMOperatingUnitContactEntity
-CountryRegionCode		GAB/OMOperatingUnitContactEntity
-Locator		GAB/OMOperatingUnitContactEntity
-LocatorExtension		GAB/OMOperatingUnitContactEntity
-Purpose		GAB/OMOperatingUnitContactEntity
-IsMobilePhone		GAB/OMOperatingUnitContactEntity
-IsPrimary		GAB/OMOperatingUnitContactEntity
-IsPrivate		GAB/OMOperatingUnitContactEntity
-OMOperatingUnitNumber		GAB/OMOperatingUnitContactEntity
-Relationship_OMOperatingUnitRelationshipId		GAB/OMOperatingUnitContactEntity
-BackingTable_DirPartyContactEntityRelationshipId		GAB/OMOperatingUnitContactEntity
+        "partyNumber": StringAttribute,
+        "locationId": StringAttribute,
+        "type": StringAttribute,
+        "countryRegionCode": StringAttribute,
+        "locator": StringAttribute,
+        "locatorExtension": StringAttribute,
+        "purpose": StringAttribute,
+        "isMobilePhone": StringAttribute,
+        "isPrimary": StringAttribute,
+        "isPrivate": StringAttribute,
+        "omOperatingUnitNumber": StringAttribute,
+        "relationship_OMOperatingUnitRelationshipId": StringAttribute,
+        "backingTable_DirPartyContactEntityRelationshipId": StringAttribute,
       ])
       .registerPath("addressbooks_dir.nameaffixes");
   }

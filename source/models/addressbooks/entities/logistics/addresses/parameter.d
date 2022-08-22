@@ -1,32 +1,41 @@
-module models.addressbooks.entities.logistics.locationrole;
+module models.addressbooks.entities.logistics.addresses.parameter;
 
 @safe:
 import models.addressbooks;
 
-class DLogisticsLocationRoleEntity : DOOPEntity {
-  mixin(EntityThis!("LogisticsLocationRoleEntity"));
+class DLogisticsAddressPostalCodeEntity : DOOPEntity {
+  mixin(EntityThis!("LogisticsAddressPostalCodeEntity"));
   
   override void initialize() {
     super.initialize;
 
     this
       .addValues([ // individual values
-purpose		GAB/LogisticsLocationRoleEntity
-postalAddress		GAB/LogisticsLocationRoleEntity
-contactInfo		GAB/LogisticsLocationRoleEntity
-language		GAB/LogisticsLocationRoleEntity
-type		GAB/LogisticsLocationRoleEntity
-backingTable_LogisticsLocationRoleTranslationRelationshipId		GAB/LogisticsLocationRoleEntity
+        "city": StringAttribute,
+        "cityId": StringAttribute,
+        "cityAlias": StringAttribute,
+        "countryRegionId": StringAttribute,
+        "countyId": StringAttribute,
+        "district": StringAttribute,
+        "districtId": StringAttribute,
+        "stateId": StringAttribute,
+        "street": StringAttribute,
+        "streetNumberMinimum": StringAttribute,
+        "streetNumberMaximum": StringAttribute,
+        "streetNumberValidity": StringAttribute,
+        "timeZone": StringAttribute,
+        "zipCode": StringAttribute,
+        "backingTable_LogisticsAddressZipCodeRelationshipId": StringAttribute,
       ])
-      .registerPath("addressbooks_logistics.locationroles");
+      .registerPath("addressbooks_logistics.addresses.parameters");
   }
 }
-mixin(EntityCalls!("LogisticsLocationRoleEntity"));
+mixin(EntityCalls!("LogisticsAddressPostalCodeEntity"));
 
 version(test_library) {
   unittest {
-    assert(LogisticsLocationRoleEntity);
+    assert(LogisticsAddressPostalCodeEntity);
   
-    auto entity = LogisticsLocationRoleEntity;
+    auto entity = LogisticsAddressPostalCodeEntity;
   }
 }

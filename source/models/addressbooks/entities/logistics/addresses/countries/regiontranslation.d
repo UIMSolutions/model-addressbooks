@@ -3,25 +3,30 @@ module models.addressbooks.entities.logistics.addresses.countries.countryregiont
 @safe:
 import models.addressbooks;
 
-class DLogisticsLocationRoleEntity : DOOPEntity {
-  mixin(EntityThis!("LogisticsLocationRoleEntity"));
+class DLogisticsAddressCountryRegionTranslationEntity : DOOPEntity {
+  mixin(EntityThis!("LogisticsAddressCountryRegionTranslationEntity"));
   
   override void initialize() {
     super.initialize;
 
     this
       .addValues([ // individual values
-...
+        "countryRegionId": StringAttribute, 
+        "languageId": StringAttribute, 
+        "longName": StringAttribute, 
+        "shortName": StringAttribute, 
+        "relationship_CountryRegionRelationshipId": StringAttribute, 
+        "backingTable_LogisticsAddressCountryRegionTranslationRelationshipId": StringAttribute, 
       ])
-      .registerPath("addressbooks_logistics.locationroles");
+      .registerPath("addressbooks_logistics.addresses.countries.countryregiontranslations");
   }
 }
-mixin(EntityCalls!("LogisticsLocationRoleEntity"));
+mixin(EntityCalls!("LogisticsAddressCountryRegionTranslationEntity"));
 
 version(test_library) {
   unittest {
-    assert(LogisticsLocationRoleEntity);
+    assert(LogisticsAddressCountryRegionTranslationEntity);
   
-    auto entity = LogisticsLocationRoleEntity;
+    auto entity = LogisticsAddressCountryRegionTranslationEntity;
   }
 }

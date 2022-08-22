@@ -11,17 +11,13 @@ class DDirectoryPartyRelationshipEntity : DOOPEntity {
 
     this
       .addValues([ // individual values
-        "legalEntityDataArea": StringAttribute, 
-        "relationshipType": StringAttribute, 
-        "validFrom": StringAttribute, 
-        "validTo": StringAttribute, 
-        "childPartyId": UUIDAttribute, 
-        "childParty": StringAttribute, 
-        "parentParty": StringAttribute, 
-        "nullableParentPartyId": UUIDAttribute, 
-        "parentPartyId": UUIDAttribute, 
-        "systemType": StringAttribute, 
-        "backingTable_DirPartyRelationshipRelationshipId": UUIDAttribute, 
+        "relationshipAToB":	StringAttribute, 
+        "partyAType":	StringAttribute, 
+        "symmetric":	StringAttribute, 
+        "relationshipBToA":	StringAttribute, 
+        "partyBType":	StringAttribute, 
+        "systemType":	StringAttribute, 
+        "backingTable_DirRelationshipTypeTableRelationshipId": UUIDAttribute, 
       ])
       .registerPath("addressbooks_dir.relationshiptypes");
   }

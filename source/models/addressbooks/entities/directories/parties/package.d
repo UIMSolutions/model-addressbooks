@@ -6,4 +6,5 @@ public import models.addressbooks.entities.directories.parties.locations;
 // Module
 public import models.addressbooks.entities.directories.parties.base;
 public import models.addressbooks.entities.directories.parties.contact;
+public import models.addressbooks.entities.directories.parties.party;
 public import models.addressbooks.entities.directories.parties.relationship;

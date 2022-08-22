@@ -4,26 +4,34 @@ module models.addressbooks.entities.logistics.addresses.countries.region;
 @safe:
 import models.addressbooks;
 
-class DLogisticsLocationRoleEntity : DOOPEntity {
-  mixin(EntityThis!("LogisticsLocationRoleEntity"));
+class DLogisticsAddressCountryRegionEntity : DOOPEntity {
+  mixin(EntityThis!("LogisticsAddressCountryRegionEntity"));
   
   override void initialize() {
     super.initialize;
 
     this
       .addValues([ // individual values
-...
-
+        "countryRegion": StringAttribute, 
+        "addressFormat": StringAttribute, 
+        "timeZone": StringAttribute, 
+        "useZipPlus4": StringAttribute, 
+        "isoCode": StringAttribute, 
+        "currencyCode": StringAttribute, 
+        "parentCountryRegion": StringAttribute, 
+        "brazilCentralBankCountryCode": StringAttribute, 
+        "oksmCode_RU": StringAttribute, 
+        "backingTable_LogisticsAddressCountryRegionRelationshipId": StringAttribute, 
       ])
-      .registerPath("addressbooks_logistics.locationroles");
+      .registerPath("addressbooks_logistics.addresses.countries.regions");
   }
 }
-mixin(EntityCalls!("LogisticsLocationRoleEntity"));
+mixin(EntityCalls!("LogisticsAddressCountryRegionEntity"));
 
 version(test_library) {
   unittest {
-    assert(LogisticsLocationRoleEntity);
+    assert(LogisticsAddressCountryRegionEntity);
   
-    auto entity = LogisticsLocationRoleEntity;
+    auto entity = LogisticsAddressCountryRegionEntity;
   }
 }

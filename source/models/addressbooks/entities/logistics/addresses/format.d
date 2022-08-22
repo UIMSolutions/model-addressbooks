@@ -1,32 +1,28 @@
-module models.addressbooks.entities.logistics.locationrole;
+module models.addressbooks.entities.logistics.addresses.format;
 
 @safe:
 import models.addressbooks;
 
-class DLogisticsLocationRoleEntity : DOOPEntity {
-  mixin(EntityThis!("LogisticsLocationRoleEntity"));
+class DLogisticsAddressFormatEntity : DOOPEntity {
+  mixin(EntityThis!("LogisticsAddressFormatEntity"));
   
   override void initialize() {
     super.initialize;
 
     this
       .addValues([ // individual values
-purpose		GAB/LogisticsLocationRoleEntity
-postalAddress		GAB/LogisticsLocationRoleEntity
-contactInfo		GAB/LogisticsLocationRoleEntity
-language		GAB/LogisticsLocationRoleEntity
-type		GAB/LogisticsLocationRoleEntity
-backingTable_LogisticsLocationRoleTranslationRelationshipId		GAB/LogisticsLocationRoleEntity
+        "addressFormat": StringAttribute,
+        "backingTable_LogisticsAddressFormatHeadingRelationshipId": StringAttribute,
       ])
-      .registerPath("addressbooks_logistics.locationroles");
+      .registerPath("addressbooks_logistics.addresses.formats");
   }
 }
-mixin(EntityCalls!("LogisticsLocationRoleEntity"));
+mixin(EntityCalls!("LogisticsAddressFormatEntity"));
 
 version(test_library) {
   unittest {
-    assert(LogisticsLocationRoleEntity);
+    assert(LogisticsAddressFormatEntity);
   
-    auto entity = LogisticsLocationRoleEntity;
+    auto entity = LogisticsAddressFormatEntity;
   }
 }

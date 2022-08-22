@@ -12,8 +12,7 @@ class DFiasSteadEntity : DOOPEntity {
     this
       .addValues([ // individual values
         "steadId": UUIDAttribute, 
-        "steadGuid": StringAttribute, 
-        "parentGuid": StringAttribute, 
+        "parentId": UUIDAttribute, 
         "regionCode": StringAttribute, 
         "divType": StringAttribute, 
         "number": StringAttribute, 

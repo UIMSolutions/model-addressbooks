@@ -3,25 +3,37 @@ module models.addressbooks.entities.legals.representativecontact;
 @safe:
 import models.addressbooks;
 
-class DLogisticsLocationRoleEntity : DOOPEntity {
-  mixin(EntityThis!("LogisticsLocationRoleEntity"));
+class DLegalRepresentativeContactEntity : DOOPEntity {
+  mixin(EntityThis!("LegalRepresentativeContactEntity"));
   
   override void initialize() {
     super.initialize;
 
     this
       .addValues([ // individual values
-,
+        "fiscalOrganizationRootFiscalEstablishmentDataArea": StringAttribute, 
+        "fiscalOrganizationRootFiscalEstablishment": StringAttribute, 
+        "legalRepresentativeCPF": StringAttribute, 
+        "legalRepresentativeRole": StringAttribute, 
+        "type": StringAttribute, 
+        "contactNumberOrAddress": StringAttribute, 
+        "extension": StringAttribute, 
+        "internationalCallingCode": StringAttribute, 
+        "isPrimary": BooleanAttribute, 
+        "isMobilePhone": BooleanAttribute, 
+        "isInstantMessage": BooleanAttribute, 
+        "isPrivate": BooleanAttribute, 
+        "backingTable_LegalRepresentativeEntityRelationshipId": UUIDAttribute, 
       ])
-      .registerPath("addressbooks_logistics.locationroles");
+      .registerPath("addressbooks_legals.representativecontacts");
   }
 }
-mixin(EntityCalls!("LogisticsLocationRoleEntity"));
+mixin(EntityCalls!("LegalRepresentativeContactEntity"));
 
 version(test_library) {
   unittest {
-    assert(LogisticsLocationRoleEntity);
+    assert(LegalRepresentativeContactEntity);
   
-    auto entity = LogisticsLocationRoleEntity;
+    auto entity = LegalRepresentativeContactEntity;
   }
 }

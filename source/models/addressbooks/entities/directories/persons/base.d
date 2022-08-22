@@ -89,7 +89,7 @@ class DDirPersonBaseEntity : DOOPEntity {
         "validTo": StringAttribute, 
         "nameSequenceDisplayAs": StringAttribute, 
         "partyType": StringAttribute, 
-        "ElectronicLocationId": UUIDAttribute, 
+        "electronicLocationId": UUIDAttribute, 
         "partyRecordId": UUIDAttribute, 
         "backingTable_DirPartyBaseEntityRelationshipId": UUIDAttribute, 
       ])
