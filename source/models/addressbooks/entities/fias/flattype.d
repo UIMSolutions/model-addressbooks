@@ -6,7 +6,7 @@ import models.addressbooks;
 class DFiasFlatTypeEntity : DOOPEntity {
   mixin(EntityThis!("FiasFlatTypeEntity"));
   
-  override void initialize() {
+  override void initialize(DConfigurationValue configSettings = null) {
     super.initialize;
 
     this

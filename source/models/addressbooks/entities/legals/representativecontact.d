@@ -6,7 +6,7 @@ import models.addressbooks;
 class DLegalRepresentativeContactEntity : DOOPEntity {
   mixin(EntityThis!("LegalRepresentativeContactEntity"));
   
-  override void initialize() {
+  override void initialize(DConfigurationValue configSettings = null) {
     super.initialize;
 
     this
