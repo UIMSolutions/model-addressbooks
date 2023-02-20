@@ -6,7 +6,7 @@ import models.addressbooks;
 class DLogisticsAddressZipcodeChinaEntity : DOOPEntity {
   mixin(EntityThis!("LogisticsAddressZipcodeChinaEntity"));
   
-  override void initialize() {
+  override void initialize(DConfigurationValue configSettings = null) {
     super.initialize;
 
     this
