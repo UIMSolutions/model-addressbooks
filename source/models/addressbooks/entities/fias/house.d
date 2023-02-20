@@ -7,7 +7,7 @@ class DFiasHouseEntity : DOOPEntity {
   mixin(EntityThis!("FiasHouseEntity"));
   
   override void initialize(DConfigurationValue configSettings = null) {
-    super.initialize;
+    super.initialize(configSettings);
 
     this
       .addValues([ // individual values
