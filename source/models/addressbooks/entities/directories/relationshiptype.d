@@ -6,7 +6,7 @@ import models.addressbooks;
 class DDirectoryPartyRelationshipEntity : DOOPEntity {
   mixin(EntityThis!("DirectoryPartyRelationshipEntity"));
   
-  override void initialize() {
+  override void initialize(DConfigurationValue configSettings = null) {
     super.initialize;
 
     this

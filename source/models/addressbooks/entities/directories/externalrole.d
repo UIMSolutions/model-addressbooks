@@ -6,7 +6,7 @@ import models.addressbooks;
 class DDirectoryExternalRoleEntity : DOOPEntity {
   mixin(EntityThis!("DirectoryExternalRoleEntity"));
   
-  override void initialize() {
+  override void initialize(DConfigurationValue configSettings = null) {
     super.initialize;
 
     this

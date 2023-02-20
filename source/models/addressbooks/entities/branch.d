@@ -6,7 +6,7 @@ import models.addressbooks;
 class DBranchEntity : DOOPEntity {
   mixin(EntityThis!("BranchEntity"));
   
-  override void initialize() {
+  override void initialize(DConfigurationValue configSettings = null) {
     super.initialize;
 
     this
