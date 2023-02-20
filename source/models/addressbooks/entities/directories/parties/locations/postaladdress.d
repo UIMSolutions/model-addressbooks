@@ -7,7 +7,7 @@ class DDirPartyLocationPostalAddressEntity : DOOPEntity {
   mixin(EntityThis!("DirPartyLocationPostalAddressEntity"));
   
   override void initialize(DConfigurationValue configSettings = null) {
-    super.initialize;
+    super.initialize(configSettings);
 
     this
       .addValues([ // individual values
