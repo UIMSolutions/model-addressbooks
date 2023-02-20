@@ -7,7 +7,7 @@ class DOMTeamMemberEntity : DOOPEntity {
   mixin(EntityThis!("OMTeamMemberEntity"));
   
   override void initialize(DConfigurationValue configSettings = null) {
-    super.initialize;
+    super.initialize(configSettings);
 
     this
       .addValues([ // individual values
