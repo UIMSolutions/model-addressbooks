@@ -6,7 +6,7 @@ import models.addressbooks;
 class DFiasEstateStatusEntity : DOOPEntity {
   mixin(EntityThis!("FiasEstateStatusEntity"));
   
-  override void initialize() {
+  override void initialize(DConfigurationValue configSettings = null) {
     super.initialize;
 
     this

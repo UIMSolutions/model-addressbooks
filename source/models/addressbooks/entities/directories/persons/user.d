@@ -6,7 +6,7 @@ import models.addressbooks;
 class DDirPersonUserEntity : DOOPEntity {
   mixin(EntityThis!("DirPersonUserEntity"));
   
-  override void initialize() {
+  override void initialize(DConfigurationValue configSettings = null) {
     super.initialize;
 
     this

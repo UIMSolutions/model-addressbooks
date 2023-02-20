@@ -6,7 +6,7 @@ import models.addressbooks;
 class DDirNameAffixEntity : DOOPEntity {
   mixin(EntityThis!("DirNameAffixEntity"));
   
-  override void initialize() {
+  override void initialize(DConfigurationValue configSettings = null) {
     super.initialize;
 
     this
