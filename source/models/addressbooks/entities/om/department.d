@@ -6,7 +6,7 @@ import models.addressbooks;
 class DOMDepartmentEntity : DOOPEntity {
   mixin(EntityThis!("OMDepartmentEntity"));
   
-  override void initialize() {
+  override void initialize(DConfigurationValue configSettings = null) {
     super.initialize;
 
     this
