@@ -7,7 +7,7 @@ class DDirectoryPartyBaseEntity : DOOPEntity {
   mixin(EntityThis!("DirectoryPartyBaseEntity"));
   
   override void initialize(DConfigurationValue configSettings = null) {
-    super.initialize;
+    super.initialize(configSettings);
 
     this
       .addValues([ // individual values
