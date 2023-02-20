@@ -7,7 +7,7 @@ class DLogisticsAddressZipcodeJapanEntity : DOOPEntity {
   mixin(EntityThis!("LogisticsAddressZipcodeJapanEntity"));
   
   override void initialize(DConfigurationValue configSettings = null) {
-    super.initialize;
+    super.initialize(configSettings);
 
     this
       .addValues([ // individual values

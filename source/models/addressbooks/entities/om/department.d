@@ -7,7 +7,7 @@ class DOMDepartmentEntity : DOOPEntity {
   mixin(EntityThis!("OMDepartmentEntity"));
   
   override void initialize(DConfigurationValue configSettings = null) {
-    super.initialize;
+    super.initialize(configSettings);
 
     this
       .addValues([ // individual values

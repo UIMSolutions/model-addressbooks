@@ -7,7 +7,7 @@ class DOmLegalEntityContactEntity : DOOPEntity {
   mixin(EntityThis!("OmLegalEntityContactEntity"));
   
   override void initialize(DConfigurationValue configSettings = null) {
-    super.initialize;
+    super.initialize(configSettings);
 
     this
       .addValues([ // individual values
