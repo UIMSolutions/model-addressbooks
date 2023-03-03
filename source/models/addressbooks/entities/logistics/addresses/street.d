@@ -35,8 +35,7 @@ class DLogisticsAddressStreetEntity : DOOPEntity {
 }
 mixin(EntityCalls!("LogisticsAddressStreetEntity"));
 
-version(test_library) {
-  unittest {
+version(test_library) { unittest {
     assert(LogisticsAddressStreetEntity);
   
     auto entity = LogisticsAddressStreetEntity;

@@ -78,8 +78,7 @@ class DOMCostCenterEntity : DOOPEntity {
 }
 mixin(EntityCalls!("OMCostCenterEntity"));
 
-version(test_library) {
-  unittest {
+version(test_library) { unittest {
     assert(OMCostCenterEntity);
   
     auto entity = OMCostCenterEntity;

@@ -69,8 +69,7 @@ class DOMDepartmentEntity : DOOPEntity {
 }
 mixin(EntityCalls!("OMDepartmentEntity"));
 
-version(test_library) {
-  unittest {
+version(test_library) { unittest {
     assert(OMDepartmentEntity);
   
     auto entity = OMDepartmentEntity;
