@@ -30,8 +30,7 @@ class DOMOperatingUnitContactEntity : DOOPEntity {
 }
 mixin(EntityCalls!("OMOperatingUnitContactEntity"));
 
-version(test_library) {
-  unittest {
+version(test_library) { unittest {
     assert(OMOperatingUnitContactEntity);
   
     auto entity = OMOperatingUnitContactEntity;

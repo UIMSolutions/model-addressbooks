@@ -25,8 +25,7 @@ backingTable_OMTeamMembershipCriterionRelationshipId		GAB/OMTeamTypeEntity
 }
 mixin(EntityCalls!("OMTeamTypeEntity"));
 
-version(test_library) {
-  unittest {
+version(test_library) { unittest {
     assert(OMTeamTypeEntity);
   
     auto entity = OMTeamTypeEntity;

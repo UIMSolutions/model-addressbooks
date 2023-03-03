@@ -119,8 +119,7 @@ class DOMLegalEntity : DOOPEntity {
 }
 mixin(EntityCalls!("OMLegalEntity"));
 
-version(test_library) {
-  unittest {
+version(test_library) { unittest {
     assert(OMLegalEntity);
   
     auto entity = OMLegalEntity;

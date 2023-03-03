@@ -28,8 +28,7 @@ backingTable_DirPartyRelationshipRelationshipId		GAB/OMTeamMemberV2Entity
 }
 mixin(EntityCalls!("OMTeamMemberEntity"));
 
-version(test_library) {
-  unittest {
+version(test_library) { unittest {
     assert(OMTeamMemberEntity);
   
     auto entity = OMTeamMemberEntity;

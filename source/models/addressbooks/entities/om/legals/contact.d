@@ -30,8 +30,7 @@ class DOmLegalEntityContactEntity : DOOPEntity {
 }
 mixin(EntityCalls!("OmLegalEntityContactEntity"));
 
-version(test_library) {
-  unittest {
+version(test_library) { unittest {
     assert(OmLegalEntityContactEntity);
   
     auto entity = OmLegalEntityContactEntity;

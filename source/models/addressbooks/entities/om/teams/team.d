@@ -26,8 +26,7 @@ BackingTable_OMTeamRelationshipId		GAB/OMTeamV2Entity
 }
 mixin(EntityCalls!("DirNameAffixEntity"));
 
-version(test_library) {
-  unittest {
+version(test_library) { unittest {
     assert(DirNameAffixEntity);
   
     auto entity = DirNameAffixEntity;
