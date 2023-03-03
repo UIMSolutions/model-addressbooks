@@ -30,8 +30,7 @@ class DDirectoryrNameSequenceEntity : DOOPEntity {
 }
 mixin(EntityCalls!("DirectoryrNameSequenceEntity"));
 
-version(test_library) {
-  unittest {
+version(test_library) { unittest {
     assert(DirectoryrNameSequenceEntity);
   
     auto entity = DirectoryrNameSequenceEntity;

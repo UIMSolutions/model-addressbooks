@@ -20,8 +20,7 @@ class DDirectoryExternalRoleEntity : DOOPEntity {
 }
 mixin(EntityCalls!("DirectoryExternalRoleEntity"));
 
-version(test_library) {
-  unittest {
+version(test_library) { unittest {
     assert(DirectoryExternalRoleEntity);
   
     auto entity = DirectoryExternalRoleEntity;

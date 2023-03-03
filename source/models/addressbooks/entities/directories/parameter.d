@@ -26,8 +26,7 @@ class DDirectoryParametersEntity : DOOPEntity {
 }
 mixin(EntityCalls!("DirectoryParametersEntity"));
 
-version(test_library) {
-  unittest {
+version(test_library) { unittest {
     assert(DirectoryParametersEntity);
   
     auto entity = DirectoryParametersEntity;

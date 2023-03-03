@@ -22,8 +22,7 @@ class DCompanyInfoEntity : DOOPEntity {
 }
 mixin(EntityCalls!("CompanyInfoEntity"));
 
-version(test_library) {
-  unittest {
+version(test_library) { unittest {
     assert(CompanyInfoEntity);
   
     auto entity = CompanyInfoEntity;

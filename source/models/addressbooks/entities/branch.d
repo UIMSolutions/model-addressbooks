@@ -23,8 +23,7 @@ class DBranchEntity : DOOPEntity {
 }
 mixin(EntityCalls!("BranchEntity"));
 
-version(test_library) {
-  unittest {
+version(test_library) { unittest {
     assert(BranchEntity);
   
     auto entity = BranchEntity;

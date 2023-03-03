@@ -24,8 +24,7 @@ class DDirectoryPartyRelationshipEntity : DOOPEntity {
 }
 mixin(EntityCalls!("DirectoryPartyRelationshipEntity"));
 
-version(test_library) {
-  unittest {
+version(test_library) { unittest {
     assert(DirectoryPartyRelationshipEntity);
   
     auto entity = DirectoryPartyRelationshipEntity;

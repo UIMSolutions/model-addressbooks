@@ -20,8 +20,7 @@ class DDirectoryNameAffixEntity : DOOPEntity {
 }
 mixin(EntityCalls!("DirectoryNameAffixEntity"));
 
-version(test_library) {
-  unittest {
+version(test_library) { unittest {
     assert(DirectoryNameAffixEntity);
   
     auto entity = DirectoryNameAffixEntity;
