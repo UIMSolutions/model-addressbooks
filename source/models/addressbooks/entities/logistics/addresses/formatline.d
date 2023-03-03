@@ -28,8 +28,7 @@ class DLogisticsAddressFormatLinesEntity : DOOPEntity {
 }
 mixin(EntityCalls!("LogisticsAddressFormatLinesEntity"));
 
-version(test_library) {
-  unittest {
+version(test_library) { unittest {
     assert(LogisticsAddressFormatLinesEntity);
   
     auto entity = LogisticsAddressFormatLinesEntity;
