@@ -30,8 +30,7 @@ class DLegalRepresentativeContactEntity : DOOPEntity {
 }
 mixin(EntityCalls!("LegalRepresentativeContactEntity"));
 
-version(test_library) {
-  unittest {
+version(test_library) { unittest {
     assert(LegalRepresentativeContactEntity);
   
     auto entity = LegalRepresentativeContactEntity;

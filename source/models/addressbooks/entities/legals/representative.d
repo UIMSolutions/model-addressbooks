@@ -28,8 +28,7 @@ class DLegalRepresentativeEntity : DOOPEntity {
 }
 mixin(EntityCalls!("LegalRepresentativeEntity"));
 
-version(test_library) {
-  unittest {
+version(test_library) { unittest {
     assert(LegalRepresentativeEntity);
   
     auto entity = LegalRepresentativeEntity;

@@ -21,8 +21,7 @@ class DFiasFlatTypeEntity : DOOPEntity {
 }
 mixin(EntityCalls!("FiasFlatTypeEntity"));
 
-version(test_library) {
-  unittest {
+version(test_library) { unittest {
     assert(FiasFlatTypeEntity);
   
     auto entity = FiasFlatTypeEntity;

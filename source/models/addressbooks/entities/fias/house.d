@@ -34,8 +34,7 @@ class DFiasHouseEntity : DOOPEntity {
 }
 mixin(EntityCalls!("FiasHouseEntity"));
 
-version(test_library) {
-  unittest {
+version(test_library) { unittest {
     assert(FiasHouseEntity);
   
     auto entity = FiasHouseEntity;

@@ -27,8 +27,7 @@ class DFiasRoomEntity : DOOPEntity {
 }
 mixin(EntityCalls!("FiasRoomEntity"));
 
-version(test_library) {
-  unittest {
+version(test_library) { unittest {
     assert(FiasRoomEntity);
   
     auto entity = FiasRoomEntity;

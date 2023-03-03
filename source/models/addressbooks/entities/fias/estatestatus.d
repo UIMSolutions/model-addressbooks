@@ -20,8 +20,7 @@ class DFiasEstateStatusEntity : DOOPEntity {
 }
 mixin(EntityCalls!("FiasEstateStatusEntity"));
 
-version(test_library) {
-  unittest {
+version(test_library) { unittest {
     assert(FiasEstateStatusEntity);
   
     auto entity = FiasEstateStatusEntity;
