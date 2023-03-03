@@ -43,8 +43,7 @@ class DFiasAddressObjectEntityy : DOOPEntity {
 }
 mixin(EntityCalls!("FiasAddressObjectEntity"));
 
-version(test_library) {
-  unittest {
+version(test_library) { unittest {
     assert(FiasAddressObjectEntity);
   
     auto entity = FiasAddressObjectEntity;

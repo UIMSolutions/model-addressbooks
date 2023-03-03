@@ -26,8 +26,7 @@ class DDirPersonNameHistoricalEntity : DOOPEntity {
 }
 mixin(EntityCalls!("DirPersonNameHistoricalEntity"));
 
-version(test_library) {
-  unittest {
+version(test_library) { unittest {
     assert(DirPersonNameHistoricalEntity);
   
     auto entity = DirPersonNameHistoricalEntity;

@@ -54,8 +54,7 @@ class DDirectoryPartyLocationPostalAddressHistoricalEntity : DOOPEntity {
 }
 mixin(EntityCalls!("DirectoryPartyLocationPostalAddressHistoricalEntity"));
 
-version(test_library) {
-  unittest {
+version(test_library) { unittest {
     assert(DirectoryPartyLocationPostalAddressHistoricalEntity);
   
     auto entity = DirectoryPartyLocationPostalAddressHistoricalEntity;

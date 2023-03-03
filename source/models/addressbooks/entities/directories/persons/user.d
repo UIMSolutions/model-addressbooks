@@ -30,8 +30,7 @@ class DDirPersonUserEntity : DOOPEntity {
 }
 mixin(EntityCalls!("DirPersonUserEntity"));
 
-version(test_library) {
-  unittest {
+version(test_library) { unittest {
     assert(DirPersonUserEntity);
   
     auto entity = DirPersonUserEntity;

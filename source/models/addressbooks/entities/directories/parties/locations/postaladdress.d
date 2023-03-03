@@ -58,8 +58,7 @@ class DDirPartyLocationPostalAddressEntity : DOOPEntity {
 }
 mixin(EntityCalls!("DirPartyLocationPostalAddressEntity"));
 
-version(test_library) {
-  unittest {
+version(test_library) { unittest {
     assert(DirPartyLocationPostalAddressEntity);
   
     auto entity = DirPartyLocationPostalAddressEntity;
