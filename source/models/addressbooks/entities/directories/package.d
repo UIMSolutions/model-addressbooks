@@ -1,10 +1,15 @@
-module models.addressbooks.entities.dir;
+module models.addressbooks.entities.directories;
 
-public import models.addressbooks.entities.directories.adressbook;
-public import models.addressbooks.entities.directories.externalrole;
-public import models.addressbooks.entities.directories.nameaffix;
-public import models.addressbooks.entities.directories.namesequence;
-public import models.addressbooks.entities.directories.parameter;
-public import models.addressbooks.entities.directories.partybase;
-public import models.addressbooks.entities.directories.partycontact;
-public import models.addressbooks.entities.directories.partylocationpostaladress;
+public { // Subpackages
+  import models.addressbooks.entities.directories.parties;
+  import models.addressbooks.entities.directories.persons;
+}
+
+public {
+  import models.addressbooks.entities.directories.adressbook;
+  import models.addressbooks.entities.directories.externalrole;
+  import models.addressbooks.entities.directories.nameaffix;
+  import models.addressbooks.entities.directories.namesequence;
+  import models.addressbooks.entities.directories.parameter;
+  import models.addressbooks.entities.directories.relationshiptype;
+}

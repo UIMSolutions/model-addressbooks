@@ -1,10 +1,12 @@
 module models.addressbooks.entities.directories.parties;
 
-// Package
-public import models.addressbooks.entities.directories.parties.locations;
+public { // Subpackage
+  import models.addressbooks.entities.directories.parties.locations;
+}
 
-// Module
-public import models.addressbooks.entities.directories.parties.base;
-public import models.addressbooks.entities.directories.parties.contact;
-public import models.addressbooks.entities.directories.parties.party;
-public import models.addressbooks.entities.directories.parties.relationship;
+public { // Modules
+  import models.addressbooks.entities.directories.parties.base;
+  import models.addressbooks.entities.directories.parties.contact;
+  import models.addressbooks.entities.directories.parties.party;
+  import models.addressbooks.entities.directories.parties.relationship;
+}

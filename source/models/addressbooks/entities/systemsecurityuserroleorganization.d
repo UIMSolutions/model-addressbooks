@@ -1,4 +1,6 @@
-module models.addressbooks.entities.dir.nameaffix;
+module models.addressbooks.entities.systemsecurityuserroleorganization;
+
+// Bug? TODO
 
 @safe:
 import models.addressbooks;
