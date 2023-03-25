@@ -33,7 +33,7 @@ class DFiasAddressObjectEntityy : DOOPEntity {
         "terrIFNSFL": StringAttribute, 
         "okato": StringAttribute, 
         "divType": StringAttribute, 
-        "NextId": UUIDAttribute, 
+        "nextId": UUIDAttribute, 
         "prevId": UUIDAttribute, 
         "backingTable_FiasAddressObjectRelationshipId": UUIDAttribute, 
         "relationship_PrimaryCompanyContextRelationshipId": UUIDAttribute, 
