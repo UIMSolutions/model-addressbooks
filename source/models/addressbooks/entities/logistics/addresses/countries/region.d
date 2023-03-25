@@ -1,6 +1,5 @@
 module models.addressbooks.entities.logistics.addresses.countries.region;
 
-
 @safe:
 import models.addressbooks;
 
@@ -29,8 +28,7 @@ class DLogisticsAddressCountryRegionEntity : DOOPEntity {
 mixin(EntityCalls!("LogisticsAddressCountryRegionEntity"));
 
 version(test_library) { unittest {
-    assert(LogisticsAddressCountryRegionEntity);
-  
-    auto entity = LogisticsAddressCountryRegionEntity;
-  }
-}
+  assert(LogisticsAddressCountryRegionEntity);
+
+  auto entity = LogisticsAddressCountryRegionEntity;
+}}
