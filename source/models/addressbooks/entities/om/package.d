@@ -1,10 +1,11 @@
 module models.addressbooks.entities.om;
 
-// Packages
-public import models.addressbooks.entities.om.legals;
-public import models.addressbooks.entities.om.operatingunits;
-public import models.addressbooks.entities.om.organizationhierarchies;
-public import models.addressbooks.entities.om.teams;
+public { // Packages
+  import models.addressbooks.entities.om.legals;
+  import models.addressbooks.entities.om.operatingunits;
+  import models.addressbooks.entities.om.organizationhierarchies;
+  import models.addressbooks.entities.om.teams;
+}
 
 // Modules
 public import models.addressbooks.entities.om.businessunit;
