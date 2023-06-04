@@ -14,3 +14,10 @@ public import models.addressbooks.attributes;
 public import models.addressbooks.classes;
 public import models.addressbooks.elememts;
 public import models.addressbooks.entities;
+
+@safe:
+static this() {
+  ModelRegistry.register("models.addressbooks",  
+    Model
+    .name("addressbooks");
+}
