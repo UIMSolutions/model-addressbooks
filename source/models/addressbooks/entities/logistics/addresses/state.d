@@ -1,8 +1,8 @@
 module models.addressbooks.entities.logistics.addresses.state;
 
-@safe:
 import models.addressbooks;
 
+@safe:
 class DLogisticsAddressStateEntity : DOOPEntity {
   mixin(EntityThis!("LogisticsAddressStateEntity"));
   

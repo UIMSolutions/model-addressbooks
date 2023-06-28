@@ -1,8 +1,8 @@
 module models.addressbooks.entities.logistics.addresses.district;
 
-@safe:
 import models.addressbooks;
 
+@safe:
 class DLogisticsAddressDistrictEntity : DOOPEntity {
   mixin(EntityThis!("LogisticsAddressDistrictEntity"));
   

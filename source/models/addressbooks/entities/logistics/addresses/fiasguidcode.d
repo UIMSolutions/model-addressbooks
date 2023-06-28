@@ -1,8 +1,8 @@
 module models.addressbooks.entities.logistics.addresses.countries.fiasidcode;
 
-@safe:
 import models.addressbooks;
 
+@safe:
 class DLogisticsAddressFiasIdCodeEntity : DOOPEntity {
   mixin(EntityThis!("LogisticsAddressFiasIdCodeEntity"));
   
