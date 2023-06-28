@@ -1,8 +1,8 @@
 module models.addressbooks.entities.directories.parties.party;
 
-@safe:
 import models.addressbooks;
 
+@safe:
 class DDirectoryPartyEntity : DOOPEntity {
   mixin(EntityThis!("DirectoryPartyEntity"));
   

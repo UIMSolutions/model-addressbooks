@@ -1,8 +1,8 @@
 module models.addressbooks.entities.directories.parties.locations.postaladdresshistorical;
 
-@safe:
 import models.addressbooks;
 
+@safe:
 class DDirectoryPartyLocationPostalAddressHistoricalEntity : DOOPEntity {
   mixin(EntityThis!("DirectoryPartyLocationPostalAddressHistoricalEntity"));
   

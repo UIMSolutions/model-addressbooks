@@ -1,8 +1,8 @@
 module models.addressbooks.entities.directories.persons.namehistorical;
 
-@safe:
 import models.addressbooks;
 
+@safe:
 class DDirPersonNameHistoricalEntity : DOOPEntity {
   mixin(EntityThis!("DirPersonNameHistoricalEntity"));
   

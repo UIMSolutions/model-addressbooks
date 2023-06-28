@@ -1,8 +1,8 @@
 module models.addressbooks.entities.directories.persons.person;
 
-@safe:
 import models.addressbooks;
 
+@safe:
 class DDirPersonEntity : DOOPEntity {
   mixin(EntityThis!("DirPersonEntity"));
   
