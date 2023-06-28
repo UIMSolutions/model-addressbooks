@@ -1,8 +1,8 @@
 module models.addressbooks.entities.om.department;
 
-@safe:
 import models.addressbooks;
 
+@safe:
 class DOMDepartmentEntity : DOOPEntity {
   mixin(EntityThis!("OMDepartmentEntity"));
   

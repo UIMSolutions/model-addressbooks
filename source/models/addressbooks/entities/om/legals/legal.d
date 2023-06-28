@@ -1,8 +1,8 @@
 module models.addressbooks.entities.om.legals.legal;
 
-@safe:
 import models.addressbooks;
 
+@safe:
 class DOMLegalEntity : DOOPEntity {
   mixin(EntityThis!("OMLegalEntity"));
   

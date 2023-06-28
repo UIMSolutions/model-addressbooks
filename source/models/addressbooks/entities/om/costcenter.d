@@ -1,8 +1,8 @@
 module models.addressbooks.entities.om.costcenter;
 
-@safe:
 import models.addressbooks;
 
+@safe:
 class DOMCostCenterEntity : DOOPEntity {
   mixin(EntityThis!("OMCostCenterEntity"));
   

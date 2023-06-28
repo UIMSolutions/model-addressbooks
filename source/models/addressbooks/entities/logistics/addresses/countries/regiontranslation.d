@@ -1,8 +1,8 @@
 module models.addressbooks.entities.logistics.addresses.countries.countryregiontranslation;
 
-@safe:
 import models.addressbooks;
 
+@safe:
 class DLogisticsAddressCountryRegionTranslationEntity : DOOPEntity {
   mixin(EntityThis!("LogisticsAddressCountryRegionTranslationEntity"));
   
