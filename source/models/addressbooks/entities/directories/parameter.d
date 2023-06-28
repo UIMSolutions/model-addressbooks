@@ -3,7 +3,7 @@ module models.addressbooks.entities.directories.parameter;
 import models.addressbooks;
 
 @safe:
-class DDirectoryParametersEntity : DOOPEntity {
+class DDirectoryParametersEntity : DEntity {
   mixin(EntityThis!("DirectoryParametersEntity"));
   
   override void initialize(DConfigurationValue configSettings = null) {

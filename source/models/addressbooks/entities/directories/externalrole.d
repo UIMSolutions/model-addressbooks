@@ -3,7 +3,7 @@ module models.addressbooks.entities.directories.externalrole;
 import models.addressbooks;
 
 @safe:
-class DDirectoryExternalRoleEntity : DOOPEntity {
+class DDirectoryExternalRoleEntity : DEntity {
   mixin(EntityThis!("DirectoryExternalRoleEntity"));
   
   override void initialize(DConfigurationValue configSettings = null) {

@@ -3,7 +3,7 @@ module models.addressbooks.entities.directories.nameaffix;
 import models.addressbooks;
 
 @safe:
-class DDirectoryNameAffixEntity : DOOPEntity {
+class DDirectoryNameAffixEntity : DEntity {
   mixin(EntityThis!("DirectoryNameAffixEntity"));
   
   override void initialize(DConfigurationValue configSettings = null) {

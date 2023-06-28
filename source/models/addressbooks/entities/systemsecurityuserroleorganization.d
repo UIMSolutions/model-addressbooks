@@ -5,7 +5,7 @@ module models.addressbooks.entities.systemsecurityuserroleorganization;
 import models.addressbooks;
 
 @safe:
-class DDirNameAffixEntity : DOOPEntity {
+class DDirNameAffixEntity : DEntity {
   mixin(EntityThis!("DirNameAffixEntity"));
   
   override void initialize(DConfigurationValue configSettings = null) {

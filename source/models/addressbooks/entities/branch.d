@@ -3,7 +3,7 @@ module models.addressbooks.entities.branch;
 import models.addressbooks;
 
 @safe:
-class DBranchEntity : DOOPEntity {
+class DBranchEntity : DEntity {
   mixin(EntityThis!("BranchEntity"));
   
   override void initialize(DConfigurationValue configSettings = null) {
