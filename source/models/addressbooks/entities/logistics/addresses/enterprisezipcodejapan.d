@@ -1,4 +1,4 @@
-module models.addressbooks.entities.logistics.addresses.enterprisezipcodeJapan;
+module models.addressbooks.entities.logistics.addresses.enterprisezipcodejapan;
 
 
 import models.addressbooks;

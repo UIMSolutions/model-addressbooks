@@ -12,7 +12,7 @@ class DOMDepartmentEntity : DOOPEntity {
     this
       .addValues([ // individual values
         "partyType": StringAttribute,
-        "KnownAs": StringAttribute,
+        "knownAs": StringAttribute,
         "language": StringAttribute,
         "memo": StringAttribute,
         "searchName": StringAttribute,
