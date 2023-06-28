@@ -3,7 +3,7 @@ module models.addressbooks.entities.logistics.addresses.zipcodechina;
 import models.addressbooks;
 
 @safe:
-class DLogisticsAddressZipcodeChinaEntity : DOOPEntity {
+class DLogisticsAddressZipcodeChinaEntity : DEntity {
   mixin(EntityThis!("LogisticsAddressZipcodeChinaEntity"));
   
   override void initialize(DConfigurationValue configSettings = null) {

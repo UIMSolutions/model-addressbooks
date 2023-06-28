@@ -3,7 +3,7 @@ module models.addressbooks.entities.om.businessunit;
 import models.addressbooks;
 
 @safe:
-class DOMBusinessUnitEntity : DOOPEntity {
+class DOMBusinessUnitEntity : DEntity {
   mixin(EntityThis!("OMBusinessUnitEntity"));
   
   override void initialize(DConfigurationValue configSettings = null) {

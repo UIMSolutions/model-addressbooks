@@ -3,7 +3,7 @@ module models.addressbooks.entities.logistics.addresses.countries.countryregiont
 import models.addressbooks;
 
 @safe:
-class DLogisticsAddressCountryRegionTranslationEntity : DOOPEntity {
+class DLogisticsAddressCountryRegionTranslationEntity : DEntity {
   mixin(EntityThis!("LogisticsAddressCountryRegionTranslationEntity"));
   
   override void initialize(DConfigurationValue configSettings = null) {

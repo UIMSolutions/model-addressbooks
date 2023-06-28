@@ -3,7 +3,7 @@ module models.addressbooks.entities.om.legals.contact;
 import models.addressbooks;
 
 @safe:
-class DOmLegalEntityContactEntity : DOOPEntity {
+class DOmLegalEntityContactEntity : DEntity {
   mixin(EntityThis!("OmLegalEntityContactEntity"));
   
   override void initialize(DConfigurationValue configSettings = null) {

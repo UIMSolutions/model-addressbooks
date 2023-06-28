@@ -3,7 +3,7 @@ module models.addressbooks.entities.om.department;
 import models.addressbooks;
 
 @safe:
-class DOMDepartmentEntity : DOOPEntity {
+class DOMDepartmentEntity : DEntity {
   mixin(EntityThis!("OMDepartmentEntity"));
   
   override void initialize(DConfigurationValue configSettings = null) {

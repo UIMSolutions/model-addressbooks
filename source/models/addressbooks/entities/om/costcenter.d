@@ -3,7 +3,7 @@ module models.addressbooks.entities.om.costcenter;
 import models.addressbooks;
 
 @safe:
-class DOMCostCenterEntity : DOOPEntity {
+class DOMCostCenterEntity : DEntity {
   mixin(EntityThis!("OMCostCenterEntity"));
   
   override void initialize(DConfigurationValue configSettings = null) {
