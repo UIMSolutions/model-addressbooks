@@ -3,7 +3,7 @@ module models.addressbooks.entities.dir.nameaffix;
 import models.addressbooks;
 
 @safe:
-class DOMOperatingUnitContactEntity : DOOPEntity {
+class DOMOperatingUnitContactEntity : DEntity {
   mixin(EntityThis!("OMOperatingUnitContactEntity"));
   
   override void initialize(DConfigurationValue configSettings = null) {
