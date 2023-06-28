@@ -1,9 +1,9 @@
 module models.addressbooks.entities.legals.representative;
 
-@safe:
 import models.addressbooks;
 
-class DLegalRepresentativeEntity : DOOPEntity {
+@safe:
+class DLegalRepresentativeEntity : DEntity {
   mixin(EntityThis!("LegalRepresentativeEntity"));
   
   override void initialize(DConfigurationValue configSettings = null) {

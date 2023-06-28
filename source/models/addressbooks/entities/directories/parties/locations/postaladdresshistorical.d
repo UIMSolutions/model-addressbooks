@@ -1,9 +1,9 @@
 module models.addressbooks.entities.directories.parties.locations.postaladdresshistorical;
 
-@safe:
 import models.addressbooks;
 
-class DDirectoryPartyLocationPostalAddressHistoricalEntity : DOOPEntity {
+@safe:
+class DDirectoryPartyLocationPostalAddressHistoricalEntity : DEntity {
   mixin(EntityThis!("DirectoryPartyLocationPostalAddressHistoricalEntity"));
   
   override void initialize(DConfigurationValue configSettings = null) {

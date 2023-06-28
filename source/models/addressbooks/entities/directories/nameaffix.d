@@ -1,9 +1,9 @@
 module models.addressbooks.entities.directories.nameaffix;
 
-@safe:
 import models.addressbooks;
 
-class DDirectoryNameAffixEntity : DOOPEntity {
+@safe:
+class DDirectoryNameAffixEntity : DEntity {
   mixin(EntityThis!("DirectoryNameAffixEntity"));
   
   override void initialize(DConfigurationValue configSettings = null) {

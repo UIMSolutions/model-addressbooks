@@ -1,9 +1,9 @@
 module models.addressbooks.entities.fias.operationstatus;
 
-@safe:
 import models.addressbooks;
 
-class DFIASOperationStatusesEntity : DOOPEntity {
+@safe:
+class DFIASOperationStatusesEntity : DEntity {
   mixin(EntityThis!("FIASOperationStatusesEntity"));
   
   override void initialize(DConfigurationValue configSettings = null) {

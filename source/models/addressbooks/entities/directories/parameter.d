@@ -1,9 +1,9 @@
 module models.addressbooks.entities.directories.parameter;
 
-@safe:
 import models.addressbooks;
 
-class DDirectoryParametersEntity : DOOPEntity {
+@safe:
+class DDirectoryParametersEntity : DEntity {
   mixin(EntityThis!("DirectoryParametersEntity"));
   
   override void initialize(DConfigurationValue configSettings = null) {

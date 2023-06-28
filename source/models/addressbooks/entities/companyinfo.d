@@ -1,9 +1,9 @@
 module models.addressbooks.entities.companyinfo;
 
-@safe:
 import models.addressbooks;
 
-class DCompanyInfoEntity : DOOPEntity {
+@safe:
+class DCompanyInfoEntity : DEntity {
   mixin(EntityThis!("CompanyInfoEntity"));
   
   override void initialize(DConfigurationValue configSettings = null) {

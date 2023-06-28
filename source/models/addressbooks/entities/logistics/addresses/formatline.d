@@ -1,9 +1,9 @@
 module models.addressbooks.entities.logistics.addresses.formatline;
 
-@safe:
 import models.addressbooks;
 
-class DLogisticsAddressFormatLinesEntity : DOOPEntity {
+@safe:
+class DLogisticsAddressFormatLinesEntity : DEntity {
   mixin(EntityThis!("LogisticsAddressFormatLinesEntity"));
   
   override void initialize(DConfigurationValue configSettings = null) {

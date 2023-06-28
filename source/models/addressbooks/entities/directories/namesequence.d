@@ -1,9 +1,9 @@
 module models.addressbooks.entities.directories.namesequence;
 
-@safe:
 import models.addressbooks;
 
-class DDirectoryrNameSequenceEntity : DOOPEntity {
+@safe:
+class DDirectoryrNameSequenceEntity : DEntity {
   mixin(EntityThis!("DirectoryrNameSequenceEntity"));
   
   override void initialize(DConfigurationValue configSettings = null) {

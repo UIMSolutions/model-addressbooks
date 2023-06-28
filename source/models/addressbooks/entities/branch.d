@@ -1,9 +1,9 @@
 module models.addressbooks.entities.branch;
 
-@safe:
 import models.addressbooks;
 
-class DBranchEntity : DOOPEntity {
+@safe:
+class DBranchEntity : DEntity {
   mixin(EntityThis!("BranchEntity"));
   
   override void initialize(DConfigurationValue configSettings = null) {

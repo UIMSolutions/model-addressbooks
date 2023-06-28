@@ -1,9 +1,9 @@
 module models.addressbooks.entities.dir.nameaffix;
 
-@safe:
 import models.addressbooks;
 
-class DOMTeamTypeEntity : DOOPEntity {
+@safe:
+class DOMTeamTypeEntity : DEntity {
   mixin(EntityThis!("OMTeamTypeEntity"));
   
   override void initialize(DConfigurationValue configSettings = null) {
@@ -11,16 +11,16 @@ class DOMTeamTypeEntity : DOOPEntity {
 
     this
       .addValues([ // individual values
-allowContact		GAB/OMTeamTypeEntity
-allowContractor		GAB/OMTeamTypeEntity
-allowCustomer		GAB/OMTeamTypeEntity
-allowEmployee		GAB/OMTeamTypeEntity
-allowVendor		GAB/OMTeamTypeEntity
-isSystemCriterion		GAB/OMTeamTypeEntity
-requiresAXUser		GAB/OMTeamTypeEntity
-backingTable_OMTeamMembershipCriterionRelationshipId		GAB/OMTeamTypeEntity
+        "allowContact". StringAttribute, //		GAB/OMTeamTypeEntity
+        "allowContractor". StringAttribute, //		GAB/OMTeamTypeEntity
+        "allowCustomer". StringAttribute, //		GAB/OMTeamTypeEntity
+        "allowEmployee". StringAttribute, //		GAB/OMTeamTypeEntity
+        "allowVendor". StringAttribute, //		GAB/OMTeamTypeEntity
+        "isSystemCriterion". StringAttribute, //		GAB/OMTeamTypeEntity
+        "requiresAXUser". StringAttribute, //		GAB/OMTeamTypeEntity
+        "backingTable_OMTeamMembershipCriterionRelationshipId". StringAttribute, //		GAB/OMTeamTypeEntity
       ])
-      .registerPath("addressbooks_dir.nameaffixes");
+      .registerPath("addressbooks.dir.nameaffix");
   }
 }
 mixin(EntityCalls!("OMTeamTypeEntity"));

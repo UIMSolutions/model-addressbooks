@@ -1,9 +1,9 @@
 module models.addressbooks.entities.logistics.addresses.district;
 
-@safe:
 import models.addressbooks;
 
-class DLogisticsAddressDistrictEntity : DOOPEntity {
+@safe:
+class DLogisticsAddressDistrictEntity : DEntity {
   mixin(EntityThis!("LogisticsAddressDistrictEntity"));
   
   override void initialize(DConfigurationValue configSettings = null) {

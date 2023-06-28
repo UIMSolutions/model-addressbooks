@@ -1,9 +1,9 @@
 module models.addressbooks.entities.directories.parties.relationship;
 
-@safe:
 import models.addressbooks;
 
-class DDirPartyRelationshipEntity : DOOPEntity {
+@safe:
+class DDirPartyRelationshipEntity : DEntity {
   mixin(EntityThis!("DirPartyRelationshipEntity"));
   
   override void initialize(DConfigurationValue configSettings = null) {

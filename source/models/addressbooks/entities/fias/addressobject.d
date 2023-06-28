@@ -1,9 +1,9 @@
 module models.addressbooks.entities.fias.addressobject;
 
-@safe:
 import models.addressbooks;
 
-class DFiasAddressObjectEntityy : DOOPEntity {
+@safe:
+class DFiasAddressObjectEntityy : DEntity {
   mixin(EntityThis!("FiasAddressObjectEntity"));
   
   override void initialize(DConfigurationValue configSettings = null) {

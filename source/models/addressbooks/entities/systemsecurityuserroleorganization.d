@@ -2,10 +2,10 @@ module models.addressbooks.entities.systemsecurityuserroleorganization;
 
 // Bug? TODO
 
-@safe:
 import models.addressbooks;
 
-class DDirNameAffixEntity : DOOPEntity {
+@safe:
+class DDirNameAffixEntity : DEntity {
   mixin(EntityThis!("DirNameAffixEntity"));
   
   override void initialize(DConfigurationValue configSettings = null) {

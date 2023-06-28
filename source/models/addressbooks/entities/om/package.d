@@ -8,6 +8,8 @@ public { // Packages
 }
 
 // Modules
-public import models.addressbooks.entities.om.businessunit;
-public import models.addressbooks.entities.om.costcenter;
-public import models.addressbooks.entities.om.department;
+public {
+  import models.addressbooks.entities.om.businessunit;
+  import models.addressbooks.entities.om.costcenter;
+  import models.addressbooks.entities.om.department;
+}

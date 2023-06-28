@@ -1,9 +1,9 @@
 module models.addressbooks.entities.om.costcenter;
 
-@safe:
 import models.addressbooks;
 
-class DOMCostCenterEntity : DOOPEntity {
+@safe:
+class DOMCostCenterEntity : DEntity {
   mixin(EntityThis!("OMCostCenterEntity"));
   
   override void initialize(DConfigurationValue configSettings = null) {
@@ -14,8 +14,8 @@ class DOMCostCenterEntity : DOOPEntity {
         "nameAlias": StringAttribute,
         "partyNumber": StringAttribute,
         "addressBooks": StringAttribute,
-        "LanguageId": StringAttribute,
-        "FullPrimaryAddress": StringAttribute,
+        "languageId": StringAttribute,
+        "fullPrimaryAddress": StringAttribute,
         "addressDescription": StringAttribute,
         "addressZipCode": StringAttribute,
         "addressCity": StringAttribute,

@@ -1,9 +1,9 @@
 module models.addressbooks.entities.om.department;
 
-@safe:
 import models.addressbooks;
 
-class DOMDepartmentEntity : DOOPEntity {
+@safe:
+class DOMDepartmentEntity : DEntity {
   mixin(EntityThis!("OMDepartmentEntity"));
   
   override void initialize(DConfigurationValue configSettings = null) {
@@ -12,7 +12,7 @@ class DOMDepartmentEntity : DOOPEntity {
     this
       .addValues([ // individual values
         "partyType": StringAttribute,
-        "KnownAs": StringAttribute,
+        "knownAs": StringAttribute,
         "language": StringAttribute,
         "memo": StringAttribute,
         "searchName": StringAttribute,

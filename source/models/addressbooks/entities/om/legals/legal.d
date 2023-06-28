@@ -1,9 +1,9 @@
 module models.addressbooks.entities.om.legals.legal;
 
-@safe:
 import models.addressbooks;
 
-class DOMLegalEntity : DOOPEntity {
+@safe:
+class DOMLegalEntity : DEntity {
   mixin(EntityThis!("OMLegalEntity"));
   
   override void initialize(DConfigurationValue configSettings = null) {

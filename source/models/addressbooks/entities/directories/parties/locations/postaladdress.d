@@ -1,9 +1,9 @@
 module models.addressbooks.entities.directories.parties.locations.postaladdress;
 
-@safe:
 import models.addressbooks;
 
-class DDirPartyLocationPostalAddressEntity : DOOPEntity {
+@safe:
+class DDirPartyLocationPostalAddressEntity : DEntity {
   mixin(EntityThis!("DirPartyLocationPostalAddressEntity"));
   
   override void initialize(DConfigurationValue configSettings = null) {

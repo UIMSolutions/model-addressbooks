@@ -1,9 +1,9 @@
 module models.addressbooks.entities.om.legals.contact;
 
-@safe:
 import models.addressbooks;
 
-class DOmLegalEntityContactEntity : DOOPEntity {
+@safe:
+class DOmLegalEntityContactEntity : DEntity {
   mixin(EntityThis!("OmLegalEntityContactEntity"));
   
   override void initialize(DConfigurationValue configSettings = null) {

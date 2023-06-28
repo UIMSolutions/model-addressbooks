@@ -1,10 +1,10 @@
-module models.addressbooks.entities.logistics.addresses.enterprisezipcodeJapan;
+module models.addressbooks.entities.logistics.addresses.enterprisezipcodejapan;
 
 
-@safe:
 import models.addressbooks;
 
-class DLogisticsLocationRoleEntity : DOOPEntity {
+@safe:
+class DLogisticsLocationRoleEntity : DEntity {
   mixin(EntityThis!("LogisticsLocationRoleEntity"));
   
   override void initialize(DConfigurationValue configSettings = null) {

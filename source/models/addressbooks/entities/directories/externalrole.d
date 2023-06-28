@@ -1,9 +1,9 @@
 module models.addressbooks.entities.directories.externalrole;
 
-@safe:
 import models.addressbooks;
 
-class DDirectoryExternalRoleEntity : DOOPEntity {
+@safe:
+class DDirectoryExternalRoleEntity : DEntity {
   mixin(EntityThis!("DirectoryExternalRoleEntity"));
   
   override void initialize(DConfigurationValue configSettings = null) {

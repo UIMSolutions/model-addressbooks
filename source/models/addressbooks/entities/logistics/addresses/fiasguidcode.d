@@ -1,9 +1,9 @@
 module models.addressbooks.entities.logistics.addresses.countries.fiasidcode;
 
-@safe:
 import models.addressbooks;
 
-class DLogisticsAddressFiasIdCodeEntity : DOOPEntity {
+@safe:
+class DLogisticsAddressFiasIdCodeEntity : DEntity {
   mixin(EntityThis!("LogisticsAddressFiasIdCodeEntity"));
   
   override void initialize(DConfigurationValue configSettings = null) {

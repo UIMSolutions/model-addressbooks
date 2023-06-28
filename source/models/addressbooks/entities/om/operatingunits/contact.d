@@ -1,9 +1,9 @@
 module models.addressbooks.entities.dir.nameaffix;
 
-@safe:
 import models.addressbooks;
 
-class DOMOperatingUnitContactEntity : DOOPEntity {
+@safe:
+class DOMOperatingUnitContactEntity : DEntity {
   mixin(EntityThis!("OMOperatingUnitContactEntity"));
   
   override void initialize(DConfigurationValue configSettings = null) {
