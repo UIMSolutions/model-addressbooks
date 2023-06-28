@@ -3,7 +3,7 @@ module models.addressbooks.entities.directories.persons.namehistorical;
 import models.addressbooks;
 
 @safe:
-class DDirPersonNameHistoricalEntity : DOOPEntity {
+class DDirPersonNameHistoricalEntity : DEntity {
   mixin(EntityThis!("DirPersonNameHistoricalEntity"));
   
   override void initialize(DConfigurationValue configSettings = null) {

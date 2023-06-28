@@ -3,7 +3,7 @@ module models.addressbooks.entities.directories.parties.locations.postaladdressh
 import models.addressbooks;
 
 @safe:
-class DDirectoryPartyLocationPostalAddressHistoricalEntity : DOOPEntity {
+class DDirectoryPartyLocationPostalAddressHistoricalEntity : DEntity {
   mixin(EntityThis!("DirectoryPartyLocationPostalAddressHistoricalEntity"));
   
   override void initialize(DConfigurationValue configSettings = null) {

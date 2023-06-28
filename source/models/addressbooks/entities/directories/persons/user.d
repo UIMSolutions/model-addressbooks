@@ -3,7 +3,7 @@ module models.addressbooks.entities.directories.persons.user;
 import models.addressbooks;
 
 @safe:
-class DDirPersonUserEntity : DOOPEntity {
+class DDirPersonUserEntity : DEntity {
   mixin(EntityThis!("DirPersonUserEntity"));
   
   override void initialize(DConfigurationValue configSettings = null) {
