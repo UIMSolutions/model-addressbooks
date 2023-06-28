@@ -1,8 +1,8 @@
 module models.addressbooks.entities.directories.namesequence;
 
-@safe:
 import models.addressbooks;
 
+@safe:
 class DDirectoryrNameSequenceEntity : DOOPEntity {
   mixin(EntityThis!("DirectoryrNameSequenceEntity"));
   

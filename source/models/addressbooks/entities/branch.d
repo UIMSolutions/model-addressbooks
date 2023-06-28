@@ -1,8 +1,8 @@
 module models.addressbooks.entities.branch;
 
-@safe:
 import models.addressbooks;
 
+@safe:
 class DBranchEntity : DOOPEntity {
   mixin(EntityThis!("BranchEntity"));
   

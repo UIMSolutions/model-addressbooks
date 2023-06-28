@@ -1,8 +1,8 @@
 module models.addressbooks.entities.directories.parameter;
 
-@safe:
 import models.addressbooks;
 
+@safe:
 class DDirectoryParametersEntity : DOOPEntity {
   mixin(EntityThis!("DirectoryParametersEntity"));
   

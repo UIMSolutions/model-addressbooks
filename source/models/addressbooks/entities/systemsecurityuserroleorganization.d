@@ -2,9 +2,9 @@ module models.addressbooks.entities.systemsecurityuserroleorganization;
 
 // Bug? TODO
 
-@safe:
 import models.addressbooks;
 
+@safe:
 class DDirNameAffixEntity : DOOPEntity {
   mixin(EntityThis!("DirNameAffixEntity"));
   

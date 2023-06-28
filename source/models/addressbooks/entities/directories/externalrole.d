@@ -1,8 +1,8 @@
 module models.addressbooks.entities.directories.externalrole;
 
-@safe:
 import models.addressbooks;
 
+@safe:
 class DDirectoryExternalRoleEntity : DOOPEntity {
   mixin(EntityThis!("DirectoryExternalRoleEntity"));
   
