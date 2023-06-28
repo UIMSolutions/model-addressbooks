@@ -1,8 +1,8 @@
 module models.addressbooks.entities.fias.structurestatus;
 
-@safe:
 import models.addressbooks;
 
+@safe:
 class DFiasStructureStatusEntity : DOOPEntity {
   mixin(EntityThis!("FiasStructureStatusEntity"));
   

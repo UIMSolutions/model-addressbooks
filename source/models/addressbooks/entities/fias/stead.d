@@ -1,8 +1,8 @@
 module models.addressbooks.entities.fias.stead;
 
-@safe:
 import models.addressbooks;
 
+@safe:
 class DFiasSteadEntity : DOOPEntity {
   mixin(EntityThis!("FiasSteadEntity"));
   

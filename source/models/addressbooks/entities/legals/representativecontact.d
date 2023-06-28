@@ -1,8 +1,8 @@
 module models.addressbooks.entities.legals.representativecontact;
 
-@safe:
 import models.addressbooks;
 
+@safe:
 class DLegalRepresentativeContactEntity : DOOPEntity {
   mixin(EntityThis!("LegalRepresentativeContactEntity"));
   

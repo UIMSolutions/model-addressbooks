@@ -1,8 +1,8 @@
 module models.addressbooks.entities.fias.flattype;
 
-@safe:
 import models.addressbooks;
 
+@safe:
 class DFiasFlatTypeEntity : DOOPEntity {
   mixin(EntityThis!("FiasFlatTypeEntity"));
   

@@ -1,8 +1,8 @@
 module models.addressbooks.entities.logistics.locationrole;
 
-@safe:
 import models.addressbooks;
 
+@safe:
 class DLogisticsLocationRoleEntity : DOOPEntity {
   mixin(EntityThis!("LogisticsLocationRoleEntity"));
   
