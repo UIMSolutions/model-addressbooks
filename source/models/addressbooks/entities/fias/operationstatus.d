@@ -3,7 +3,7 @@ module models.addressbooks.entities.fias.operationstatus;
 import models.addressbooks;
 
 @safe:
-class DFIASOperationStatusesEntity : DOOPEntity {
+class DFIASOperationStatusesEntity : DEntity {
   mixin(EntityThis!("FIASOperationStatusesEntity"));
   
   override void initialize(DConfigurationValue configSettings = null) {

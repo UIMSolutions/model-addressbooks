@@ -3,7 +3,7 @@ module models.addressbooks.entities.fias.flattype;
 import models.addressbooks;
 
 @safe:
-class DFiasFlatTypeEntity : DOOPEntity {
+class DFiasFlatTypeEntity : DEntity {
   mixin(EntityThis!("FiasFlatTypeEntity"));
   
   override void initialize(DConfigurationValue configSettings = null) {

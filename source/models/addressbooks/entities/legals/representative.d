@@ -3,7 +3,7 @@ module models.addressbooks.entities.legals.representative;
 import models.addressbooks;
 
 @safe:
-class DLegalRepresentativeEntity : DOOPEntity {
+class DLegalRepresentativeEntity : DEntity {
   mixin(EntityThis!("LegalRepresentativeEntity"));
   
   override void initialize(DConfigurationValue configSettings = null) {

@@ -3,7 +3,7 @@ module models.addressbooks.entities.fias.stead;
 import models.addressbooks;
 
 @safe:
-class DFiasSteadEntity : DOOPEntity {
+class DFiasSteadEntity : DEntity {
   mixin(EntityThis!("FiasSteadEntity"));
   
   override void initialize(DConfigurationValue configSettings = null) {

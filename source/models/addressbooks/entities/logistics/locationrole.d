@@ -3,7 +3,7 @@ module models.addressbooks.entities.logistics.locationrole;
 import models.addressbooks;
 
 @safe:
-class DLogisticsLocationRoleEntity : DOOPEntity {
+class DLogisticsLocationRoleEntity : DEntity {
   mixin(EntityThis!("LogisticsLocationRoleEntity"));
   
   override void initialize(DConfigurationValue configSettings = null) {
