@@ -1,8 +1,8 @@
 module models.addressbooks.entities.dir.nameaffix;
 
-@safe:
 import models.addressbooks;
 
+@safe:
 class DOMTeamTypeEntity : DOOPEntity {
   mixin(EntityThis!("OMTeamTypeEntity"));
   
